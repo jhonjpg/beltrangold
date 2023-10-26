@@ -1,0 +1,223 @@
+ {
+     "home": "Home",
+     "services": "Services",
+     "portfolio": "Portfolio",
+     "about": "About",
+     "contact": "Contact",
+     "desarrolladorWeb": "WEB DEVELOPER",
+     "jpDesigner": "JP DESIGNER",
+     "descripcion": "Responsible for creating and maintaining websites with programming and design skills, as well as a deep understanding of web development languages and technologies",
+     "iniciar": "START",
+     "servicesList": [{
+             "icon": "bi bi-braces",
+             "title": "Web Design and Development",
+             "description": "Create custom and functional websites for companies, entrepreneurs, educational institutions, and organizations.",
+             "points": [
+                 "Desktop Design",
+                 "Phone Design",
+                 "Tablet Design"
+             ],
+             "buttonText": "Read More"
+         },
+         {
+             "icon": "bi bi-activity",
+             "title": "Search Engine Optimization (SEO)",
+             "description": "Help improve website rankings on search engines through SEO practices and content optimization.",
+             "points": [
+                 "Boost Google Ranking",
+                 "Organic Traffic Growth",
+                 "Page Speed Optimization"
+             ]
+         },
+         {
+             "icon": "bi bi-crop",
+             "title": "UI/UX Design",
+             "description": "Design and develop powerful and modern websites for all types of businesses.",
+             "points": [
+                 "Desktop Design",
+                 "Phone Design",
+                 "Tablet Design"
+             ]
+         },
+         {
+             "icon": "bi bi-phone",
+             "title": "Responsive Design",
+             "description": "Ensure websites look and function well on different devices, including desktop computers, tablets, and mobile phones.",
+             "points": [
+                 "Desktop Design",
+                 "Phone Design",
+                 "Tablet Design"
+             ]
+         },
+         {
+
+             "icon": "bi bi-arrow-clockwise",
+             "title": "Website Maintenance and Updates",
+             "description": "Offer periodic maintenance and updates to ensure websites are always up-to-date and functioning properly.",
+             "points": [
+                 "Desktop Design",
+                 "Phone Design",
+                 "Tablet Design"
+             ]
+         },
+         {
+             "icon": "bi bi-people",
+             "title": "Consulting and Advisory",
+             "description": "Provide technical advice and consulting on best practices, technologies, and strategies to enhance clients' online presence.",
+             "points": [
+                 "Desktop Design",
+                 "Phone Design",
+                 "Tablet Design"
+             ]
+
+         }
+     ],
+
+
+     "projects": "PROJECTS",
+     "categories": {
+         "all": "All",
+         "beauty": "Beauty",
+         "foods": "Foods",
+         "laws": "Laws",
+         "medical": "Medical",
+         "media": "Media",
+         "construction": "Construction & Autos"
+     },
+
+
+     "contactDiv": {
+         "contactMe": "CONTACT ME",
+         "contactInfo": "Contact",
+         "downloadCV": "Download CV",
+         "name": "Name",
+         "email": "Email",
+         "phone": "Phone",
+         "message": "Message",
+         "submit": "Send"
+
+     },
+
+     "contactPage": {
+         "heading": "Contact Me",
+         "questions": {
+             "question1": {
+                 "title": "Questions?",
+                 "description": "Within 15 minutes, I can help address all your needs, desires, and concerns regarding any service you require. This way, I can pinpoint exactly what we will do and how we will execute your business ideas."
+             },
+             "question2": {
+                 "title": "Happy Clients",
+                 "description": "Customer satisfaction is of paramount importance to me. Other companies are too big to provide you with a personalized 1-on-1 experience, but personally, I develop everything and offer recommendations to help your business succeed."
+             },
+             "question3": {
+                 "title": "Quick Responses",
+                 "description": "Everyone is busy these days, but that doesn't mean your time isn't valuable. I strive to respond to current and potential customers at the speed of light to ensure everyone has a personal and affectionate experience."
+             }
+         }
+     },
+
+
+     "aboutMe": {
+         "about": "About Me",
+         "heading": "Who I Am",
+         "description0": "As a web developer, I specialize in designing and developing attractive and functional user interfaces. With expertise in React, JavaScript, and many other technologies, my focus is on creating responsive and optimized websites to provide an exceptional user experience.",
+         "toggleButtonKnowMore": "Learn more",
+         "description1": "I am a self-taught web designer and developer with 3 years of experience. During those 3 years, I took on and learned many platforms and technologies that enable me to stay alert and ahead of my competition. I strive to create custom websites for each client while providing them with the highest quality product in the market.",
+         "description2": "You will be hiring someone who will provide you with an individualized website that meets your requirements.",
+         "description3": "Extensive technical knowledge: As a web developer, I have a solid understanding of programming languages such as HTML, CSS, Bootstrap, Tailwind, JavaScript, jQuery, React, Node.js, GitHub, and MongoDB. I am also familiar with tools and technologies related to web development.",
+         "toggleButtonShowMore": "Show more",
+         "toggleButtonShowLess": "Show less",
+         "additionalDescription1": "I am capable of tackling complex issues with creative and innovative solutions. My ability to think outside the box enables me to offer unique approaches to web design and development.",
+         "additionalDescription2": "I am meticulous in my work and pay attention to details. This is essential to ensure that websites are accurate, function smoothly, and are visually appealing.",
+         "skillsHeading": "Skills"
+
+
+     },
+
+
+     "myclient": "What My Clients Say",
+     "reviewSlide": [{
+             "review": "JP Designer is a talented web developer who perfectly captured our vision for the site. The final result exceeded our expectations."
+         },
+         {
+             "review": "Impressed with JP Designer's ability to create an intuitive and attractive user experience. I would definitely recommend them."
+         },
+         {
+             "review": "JP Designer made the web development process smooth. Delivered a high-quality website in a short time."
+         },
+         {
+             "review": "Thanks to JP Designer, our website now reflects our brand identity in a striking way. Excellent work."
+         },
+         {
+             "review": "Professional, creative, and highly competent. JP Designer is an expert in developing first-class websites."
+         },
+         {
+             "review": "JP Designer demonstrated a great understanding of our needs and provided effective and elegant solutions."
+         },
+         {
+             "review": "JP Designer's web design is simply stunning. The details and aesthetics are impeccable."
+         },
+         {
+             "review": "Working with JP Designer was a very positive experience. They were always willing to listen to our ideas and suggestions."
+         },
+         {
+             "review": "JP Designer is a highly recommended web developer. Their ability to combine functionality with design is impressive."
+         },
+         {
+             "review": "The website that JP Designer created for us is easy to navigate and visually appealing. Without a doubt, an expert in their field."
+         },
+         {
+             "review": "JP Designer delivered the project on time and ensured that everything worked smoothly. Great professionalism."
+         },
+         {
+             "review": "JP Designer stood out for their creativity and ability to adapt to our specific needs. Very happy with the final result!"
+         }
+     ],
+
+
+     "servicesPage": {
+         "icon": "bi bi-activity",
+         "title": "Search Engine Optimization (SEO)",
+         "description": "Help improve website positioning on search engines through SEO practices and content optimization.",
+         "points": "Boost Google ranking",
+         "points2": "Organic traffic growth",
+         "points3": "Page speed optimization"
+     },
+     "servicesPage2": {
+         "icon": "bi bi-crop",
+         "title": "UI/UX Design",
+         "description": "Design and develop powerful and modern websites for all types of businesses.",
+         "points4": "Desktop Design",
+         "points5": "Phone Design",
+         "points6": "Tablet Design"
+     },
+     "servicesPage3": {
+         "icon": "bi bi-arrow-clockwise",
+         "title": "Website Maintenance and Updates",
+         "description": "Offer maintenance and periodic update services to ensure websites are always up-to-date and functioning properly.",
+         "points7": "Desktop Design",
+         "points8": "Phone Design",
+         "points9": "Tablet Design"
+     },
+     "webDesign": "Web Design and Development",
+     "KindOf": "Kind of Services",
+     "seoOptimization": "Search Engine Optimization (SEO)",
+     "responsiveDesign": "Responsive Design",
+     "uiuxDesign": "UI/UX Design",
+     "consulting": "Consulting and Advisory",
+     "maintenance": "Website Maintenance and Updates",
+     "readMore": "Read More",
+     "readLess": "Read Less",
+     "designWeb": "As a web designer, I am a highly creative and versatile professional who combines skills in graphic design, programming, and usability to conceptualize, plan, and build visually captivating, intuitive, and effective websites that meet the unique needs and goals of your clients, providing an exceptional user experience and a impactful online presence. Your ability to merge aesthetics, functionality, and technology enables you to translate ideas into coherent and attractive digital interfaces, employing a variety of programming languages and tools, and always staying updated on the latest trends and advancements in web design and development to deliver innovative solutions that drive success in the digital world.",
+     "seoDescription": "Help improve website positioning on search engines through SEO practices and content optimization. Boost Google ranking. Page speed optimization.",
+     "speedOptimization": "Page Speed Optimization",
+     "responsiveDesignDesc": "As a specialized web designer in responsive design, my work stands out due to my ability to create websites that seamlessly adapt to different devices and screen sizes. My focus on user experience has allowed me to conceive intuitive and visually captivating interfaces, ensuring smooth navigation and comfortable interaction on both desktop computers and tablets, as well as mobile phones.     ",
+     "uiuxDesignDesc": "We design and develop powerful and modern websites for all types of businesses. Desktop design, phone design, and tablet design.",
+     "consultingDescription": "As a consultant and advisor for websites, my approach stands out by providing you with expert and strategic guidance that will help you fully maximize the potential of your website, achieving significant results in the vast digital world. My focus goes beyond mere design and development; I delve deep into understanding your unique needs and objectives. This allows me to offer you entirely personalized solutions that will undoubtedly enhance your online presence in an exceptional manner.     ",
+     "componentTranslation": "This is a component translated using useTranslation.",
+     "buttonTextReadMore": "Read More",
+     "buttonTextReadLess": "Read Less"
+
+
+
+ }
