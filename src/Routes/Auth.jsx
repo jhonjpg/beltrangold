@@ -82,36 +82,36 @@ const Auth = () => {
 
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/beltranco/" element={<Home />} />
-        <Route path="/beltranco/about" element={<About />} />
-        <Route path="/beltranco/ring" element={<Ring />} />
+        <Route path="/BeltranCo/" element={<Home />} />
+        <Route path="/BeltranCo/about" element={<About />} />
+        <Route path="/BeltranCo/ring" element={<Ring />} />
         <Route
-          path="/beltranco/ring/:productName"
+          path="/BeltranCo/ring/:productName"
           element={
             <ProductDetail
-              jewerlrys={pruduct.beltranco.ring}
+              jewerlrys={pruduct.BeltranCo.ring}
               route="ring"
               addToCart={addToCart}
             />
           }
         />
-        <Route path="/beltranco/pendant" element={<Pendant />} />
+        <Route path="/BeltranCo/pendant" element={<Pendant />} />
         <Route
-          path="/beltranco/pendant/:productName"
+          path="/BeltranCo/pendant/:productName"
           element={
             <ProductDetail
-              jewerlrys={pruduct.beltranco.pendant}
+              jewerlrys={pruduct.BeltranCo.pendant}
               route="Pendant"
               addToCart={addToCart}
             />
           }
         />
-        <Route path="/beltranco/chain" element={<Chain />} />
+        <Route path="/BeltranCo/chain" element={<Chain />} />
         <Route
-          path="/beltranco/chain/:productName"
+          path="/BeltranCo/chain/:productName"
           element={
             <ProductDetail
-              jewerlrys={pruduct.beltranco.chain}
+              jewerlrys={pruduct.BeltranCo.chain}
               route="chain"
               addToCart={addToCart}
             />
@@ -119,12 +119,12 @@ const Auth = () => {
         />
 
 
-        <Route path="/beltranco/bracelet" element={<Bracelet />} />
+        <Route path="/BeltranCo/bracelet" element={<Bracelet />} />
         <Route
-          path="/beltranco/bracelet/:productName"
+          path="/BeltranCo/bracelet/:productName"
           element={
             <ProductDetail
-              jewerlrys={pruduct.beltranco.bracelet}
+              jewerlrys={pruduct.BeltranCo.bracelet}
               route="bracelet"
               addToCart={addToCart}
               itemsAdded={itemsAdded}
@@ -132,9 +132,9 @@ const Auth = () => {
             />
           }
         />
-        <Route path="/beltranco/contact" element={<Contact />} />
+        <Route path="/BeltranCo/contact" element={<Contact />} />
 
-        <Route path="/beltranco/checkout"     element={<CartPaypal cartItems={state.cartItems}/>}></Route> 
+        <Route path="/BeltranCo/checkout"     element={<CartPaypal cartItems={state.cartItems}/>}></Route> 
 
 
         <Route path="*" element={<PageNotFound />} />
