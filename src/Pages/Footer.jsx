@@ -3,11 +3,11 @@ import React from 'react'
 const Footer = () => {
   return (
 
-<footer className="w-full p-1 h-60 overflow-hidden ">
+<footer className="w-full p-1 h-72 overflow-hidden  ">
 
-<ul className="w-full h-full flex items-center justify-center flex-wrap gap-0">
+<ul className="w-full h-full flex items-center justify-center flex-wrap gap-0 ">
 
-    <li className="w-2/4 h-2/4 md:w-1/4  rounded-full overflow-hidden scale-150">  <img className="w-full h-full object-contain" src="/bc.jpg" alt="" /></li>
+    <li className="w-2/4 h-2/4 md:w-1/4  rounded-full overflow-hidden ">  <img className="w-full h-full object-contain" src="/bc.jpg" alt="" /></li>
 
 
     <li className="w-2/4 h-2/4 flex flex-col justify-center items-center gap-1 md:w-1/4 justify-start ">

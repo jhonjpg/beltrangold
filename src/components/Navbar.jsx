@@ -140,14 +140,14 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
       {isMenuOpen2 && (
 
-        <div className="fixed left-0 w-full h-screen flex flex-col justify-center items-center    top-0 z-50">
+        <div className="fixed  w-full h-screen flex flex-col justify-center items-center top-0 bottom-1 z-50">
         <div className="w-full ">
 
         <svg  onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
   <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" fill="black"></path>
 </svg>
 </div>
-        <ul className=" w-full h-screen flex flex-col items-center  gap-5  z-50 list-none p-3   uppercase	">
+        <ul className=" w-full h-screen flex flex-col items-center  gap-5  z-50 list-none p-3   uppercase oro	">
 
 
 <div className="w-full h-72 ">

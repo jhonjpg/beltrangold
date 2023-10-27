@@ -8,10 +8,10 @@ const About = () => {
 
 <section className=" about w-screen h-max		 flex flex-col md:h-max	 flex-row " >
 
-<div className="  w-screen  pt-5		 flex flex-col 	 md:flex-row md:p-10  " >
+<div className="  w-screen  pt-5		 flex flex-col justify-center items-center	 md:flex-row md:p-10  " >
 
 
-<article className="w-full   flex flex-col justify-center items-center oro mb-10  md:w-2/4 h-full gap-3  ">
+<article className="w-full   flex flex-col justify-center items-center oro mb-10  md:w-2/4 md:h-full gap-3  ">
 
 <h2 className="text-gray-400">About us</h2>
 
@@ -27,7 +27,7 @@ const About = () => {
 
 </p>
 </div>
-<p className="text-gray-500 w-10/12">
+<p className="text-gray-500 w-10/12 text-sm">
 
 BeltranCo About us page:
 
@@ -42,7 +42,7 @@ Thank you for choosing BeltranCo, where quality and service go hand in hand. As 
 
 </p>
 
-<p className="text-gray-500  w-10/12">Our skilled artisans pour their hearts into crafting every jewel, ensuring it tells a story that's uniquely yours. Whether it's an engagement ring symbolizing the beginning of a beautiful chapter or a necklace that captures the essence of a cherished memory, our jewelry becomes a part of your personal narrative.
+<p className="text-gray-500  w-10/12 text-sm">Our skilled artisans pour their hearts into crafting every jewel, ensuring it tells a story that's uniquely yours. Whether it's an engagement ring symbolizing the beginning of a beautiful chapter or a necklace that captures the essence of a cherished memory, our jewelry becomes a part of your personal narrative.
 
 </p>
 
@@ -57,10 +57,10 @@ Thank you for choosing BeltranCo, where quality and service go hand in hand. As 
 </article>
 
 
-<div className="w-full h-52	 overflow-hidden md:w-2/4 h-full">
+<div className="w-full h-60	 overflow-hidden md:w-2/4 md:h-5/6 	">
 
 
-    <img className="w-full h-full object-cover object-center" src="/about.jpg" alt="" />
+    <img className="w-full h-full object-contain object-center" src="/about.jpg" alt="" />
 </div>
 
 </div>
