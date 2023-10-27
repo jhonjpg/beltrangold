@@ -140,7 +140,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
       {isMenuOpen2 && (
 
-        <div className="fixed left-0 w-full h-screen flex flex-col justify-center items-center  bg-slate-300  top-0 z-50">
+        <div className="fixed left-0 w-full h-screen flex flex-col justify-center items-center    top-0 z-50">
         <div className="w-full ">
 
         <svg  onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
@@ -157,20 +157,20 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 </div>
 
 <ul className="w-full flex flex-col gap-5 ">
-       <li className="w-full text-2xl text-center" > <Link  onClick={toggleMenu} exact="true" to="/BeltranJewelry/"  >  {t('home')}</Link></li>
-         <li className="w-full text-2xl text-center"  > <Link  onClick={toggleMenu} to="/BeltranJewelry/about"    >  {t('about')}</Link></li>
+       <li className="w-full text-2xl text-center" > <Link  onClick={toggleMenu} exact="true" to="/BeltranCo/"  >  {t('home')}</Link></li>
+         <li className="w-full text-2xl text-center"  > <Link  onClick={toggleMenu} to="/BeltranCo/about"    >  {t('about')}</Link></li>
        
       <li className=" w-full text-2xl text-center" onClick={handleclick}
       >PRODUCT</li>
       {isNav && (
-        <div className="relative bg-slate-100 w-full ">
-      <li className="text-xl  w-full text-center  hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranJewelry/ring" >  {t('rings')}</Link></li>
-    <li className="text-xl w-full text-center  hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranJewelry/pendant" >  {t('Pendant')}</Link></li>
-    <li className="text-xl  w-full text-center hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranJewelry/chain" >  {t('chain')}</Link></li>
-    <li className="text-xl  w-full text-center hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranJewelry/chain" >  {t('todo')}</Link></li>
+        <div className="relative npm, ">
+      <li className="text-xl  w-full text-center  hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranCo/ring" >  {t('rings')}</Link></li>
+    <li className="text-xl w-full text-center  hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranCo/pendant" >  {t('Pendant')}</Link></li>
+    <li className="text-xl  w-full text-center hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranCo/chain" >  {t('chain')}</Link></li>
+    <li className="text-xl  w-full text-center hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranCo/chain" >  {t('todo')}</Link></li>
         </div>
       )}
-            <li className="w-full text-2xl text-center "  > <Link onClick={toggleMenu} to="/BeltranJewelry/contact"   >  {t('contact')}</Link></li>
+            <li className="w-full text-2xl text-center "  > <Link onClick={toggleMenu} to="/BeltranCo/contact"   >  {t('contact')}</Link></li>
             </ul>
 
 
@@ -260,8 +260,8 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
   </div>
 
   <ul className="w-3/4 flex text-lg text-gray-700 justify-end gap-10 uppercase items-center z-20	">
-    <li className="p-2 hover:bg-slate-100"> <Link exact="true" to="/BeltranJewelry/" >  {t('home')}</Link></li>
-    <li className="p-2 hover:bg-slate-100"> <Link to="/BeltranJewelry/about" >
+    <li className="p-2 hover:bg-slate-100"> <Link exact="true" to="/BeltranCo/" >  {t('home')}</Link></li>
+    <li className="p-2 hover:bg-slate-100"> <Link to="/BeltranCo/about" >
         {t('about')}</Link></li>
 
         <div
@@ -272,15 +272,15 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
       <select className="dropdown-button bg-transparent" ><option value="product">PRODUCT</option></select>
       {isMenuOpen && (
         <div className="dropdown-menu relative bg-slate-100 top-5 w-30">
-      <li className="w-24 hover:bg-slate-300"> <Link to="/BeltranJewelry/ring" >  {t('rings')}</Link></li>
-    <li className="hover:bg-slate-300"> <Link to="/BeltranJewelry/pendant" >  {t('pendant')}</Link></li>
-    <li className="hover:bg-slate-300"> <Link to="/BeltranJewelry/chain" >  {t('chain')}</Link></li>
-    <li className="hover:bg-slate-300"> <Link to="/BeltranJewelry/chain" >  {t('todo')}</Link></li>
+      <li className="w-24 hover:bg-slate-300"> <Link to="/BeltranCo/ring" >  {t('rings')}</Link></li>
+    <li className="hover:bg-slate-300"> <Link to="/BeltranCo/pendant" >  {t('pendant')}</Link></li>
+    <li className="hover:bg-slate-300"> <Link to="/BeltranCo/chain" >  {t('chain')}</Link></li>
+    <li className="hover:bg-slate-300"> <Link to="/BeltranCo/chain" >  {t('todo')}</Link></li>
         </div>
       )}
     </div>
    
-    <li className="p-2 hover:bg-slate-100"> <Link to="/BeltranJewelry/contact" >  {t('contact')}</Link></li>
+    <li className="p-2 hover:bg-slate-100"> <Link to="/BeltranCo/contact" >  {t('contact')}</Link></li>
 
    
 

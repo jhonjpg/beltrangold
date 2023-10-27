@@ -98,7 +98,7 @@ function ProductDetail({jewerlrys, route, addToCart }) {
               className="w-2/4 h-52 flex flex-col justify-between gap-3 p-2 mb-3 md:w-1/4 h-80"
             >
               <Link
-                to={`/BeltranJewelry/${route}/${jewerlry.name}`}
+                to={`/BeltranCo/${route}/${jewerlry.name}`}
                 className="w-full h-72 overflow-hidden"
               >
                 <img

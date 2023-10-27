@@ -73,11 +73,11 @@ const Auth = () => {
 
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/BeltranJewelry/" element={<Home />} />
-        <Route path="/BeltranJewelry/about" element={<About />} />
-        <Route path="/BeltranJewelry/ring" element={<Ring />} />
+        <Route path="/BeltranCo/" element={<Home />} />
+        <Route path="/BeltranCo/about" element={<About />} />
+        <Route path="/BeltranCo/ring" element={<Ring />} />
         <Route
-          path="/BeltranJewelry/ring/:productName"
+          path="/BeltranCo/ring/:productName"
           element={
             <ProductDetail
               jewerlrys={pruduct.BeltranCo.ring}
@@ -86,9 +86,9 @@ const Auth = () => {
             />
           }
         />
-        <Route path="/BeltranJewelry/pendant" element={<Pendant />} />
+        <Route path="/BeltranCo/pendant" element={<Pendant />} />
         <Route
-          path="/BeltranJewelry/pendant/:productName"
+          path="/BeltranCo/pendant/:productName"
           element={
             <ProductDetail
               jewerlrys={pruduct.BeltranCo.pendant}
@@ -97,9 +97,9 @@ const Auth = () => {
             />
           }
         />
-        <Route path="/BeltranJewelry/chain" element={<Chain />} />
+        <Route path="/BeltranCo/chain" element={<Chain />} />
         <Route
-          path="/BeltranJewelry/chain/:productName"
+          path="/BeltranCo/chain/:productName"
           element={
             <ProductDetail
               jewerlrys={pruduct.BeltranCo.chain}
@@ -110,9 +110,9 @@ const Auth = () => {
         />
 
 
-        <Route path="/BeltranJewelry/bracelet" element={<Bracelet />} />
+        <Route path="/BeltranCo/bracelet" element={<Bracelet />} />
         <Route
-          path="/BeltranJewelry/bracelet/:productName"
+          path="/BeltranCo/bracelet/:productName"
           element={
             <ProductDetail
               jewerlrys={pruduct.BeltranCo.bracelet}
@@ -121,9 +121,9 @@ const Auth = () => {
             />
           }
         />
-        <Route path="/BeltranJewelry/contact" element={<Contact />} />
+        <Route path="/BeltranCo/contact" element={<Contact />} />
 
-        <Route path="/BeltranJewelry/checkout"     element={<CartPaypal cartItems={state.cartItems}/>}></Route> 
+        <Route path="/BeltranCo/checkout"     element={<CartPaypal cartItems={state.cartItems}/>}></Route> 
 
 
         <Route path="*" element={<PageNotFound />} />

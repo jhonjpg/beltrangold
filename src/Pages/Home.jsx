@@ -23,7 +23,7 @@ const Home = () => {
 
     <section className="w-screen h-screen overflow-hidden flex justify-center items-center">
     
-    <div className="  w-11/12	 h-10/12 md:w-3/4 h-5/6 	">
+    <div className=" w-screen h-5/6	 md:w-3/4 md:h-5/6 	">
     <Swiper
         spaceBetween={30}
         effect={'fade'}
@@ -48,7 +48,7 @@ const Home = () => {
 
       </div>
     
-      <div className="absolute z-30   flex justify-center items-center bg-opacity-50 bg-black w-11/12	 h-10/12 md:w-3/4 h-5/6 ">
+      <div className="absolute z-30   flex justify-center items-center bg-opacity-25 bg-black w-screen	 h-5/6	  md:w-3/4 md:h-5/6 ">
     <div className="h-full text-white text-center flex justify-center items-center gap-4 flex-col ">
       <h1 className="text-4xl md:text-6xl font-bold mb-4">Explora la Elegancia Única</h1>
       <p className="text-lg md:text-xl">Colección Exclusiva de Joyería de Diamantes</p>

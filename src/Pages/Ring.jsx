@@ -33,7 +33,7 @@ const Ring = () => {
     <ul className="flex w-full h-96	 flex-wrap gap-3 justify-center ">
       {es.BeltranCo.ring.map((ring) => (
         <li key={ring.id} className=" w-2/5	 h-52 flex flex-col justify-between gap-3 p-1 mb-3 md:w-1/4 h-80">
-        <Link to={`/BeltranJewelry/ring/${ring.name}`} className="w-full h-72 overflow-hidden">
+        <Link to={`/BeltranCo/ring/${ring.name}`} className="w-full h-72 overflow-hidden">
           <img className="w-full h-full object-cover" src={ring.img} alt="" />
         </Link>
         <div className="h-12 w-full flex flex-col items-start">
