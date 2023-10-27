@@ -102,23 +102,30 @@ footer {
 }
 
 .portadN {
-    background-image: url("img/necklace/necklace13.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2023/10/18/17/53/jewellery-8324827_1280.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .portadR {
-    background-image: url("img/rings/ring9.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2012/11/19/07/09/ring-66598_1280.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .portadB {
-    background-image: url("img/bracelet/bracelet9.jpg");
+    background-image: url("https://media.istockphoto.com/id/1540951542/es/foto/mujer-joven-con-un-brazalete-de-oro.webp?b=1&s=612x612&w=0&k=20&c=ARUWxInhz8MlJmomabYv2o3Hiyjbqc6d9fTQbK9Y2B8=");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.portadP {
+    background-image: url("https://cdn.pixabay.com/photo/2017/10/19/11/00/pendant-2867205_1280.jpg");
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 

@@ -12,7 +12,7 @@ const Pendant = () => {
     <section className="w-full flex flex-col ">
 
 
-<div className="portadN w-full h-96 flex  items-center justify-center">
+<div className="portadP w-full h-96 flex  items-center justify-center">
 
 <h3 className="text-5xl text-white text-yellow-300">Pendant</h3>
 

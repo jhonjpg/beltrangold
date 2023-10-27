@@ -254,7 +254,7 @@
                 "description": "Embrace the divine with our 14k Yellow Gold Classic Jesus Pendant, adorned with the radiance of Cubic Zirconia Diamonds. A sacred and elegant piece that radiates spirituality and style.",
                 "prices": 510,
                 "img": "/img/pendant/men1.JPG",
-                "images": ["", "", ""]
+                "images": ["/img/pendant/men2.jpeg", "/img/pendant/men3.jpeg", "/img/pendant/men4.jpeg"]
             },
 
             {
@@ -263,7 +263,7 @@
                 "description": "Add a touch of elegance to your celebration with our 14k Yellow Gold Quinceañera Bracelet, a timeless piece designed to commemorate this special milestone in a young woman's life. This bracelet is a symbol of grace and tradition, making it the perfect accessory for a Quinceañera celebration. Make this moment even more memorable with this exquisite Quinceañera bracelet.",
                 "prices": 185,
                 "img": "/img/pendant/quinse1.jpeg",
-                "images": ["", "", ""]
+                "images": ["/img/pendant/quinse2.jpeg", "/img/pendant/quinse3.jpeg", "/img/pendant/quinse4.jpeg"]
             }
         ],
 
@@ -273,7 +273,7 @@
                 "description": "Embrace the beauty of love with our 14k Multi-Stone Gold Necklace and Bracelet Heart Set. This set features multiple hearts meticulously crafted in white, yellow, and rose gold, adorned with a dazzling array of Cubic Zirconia diamonds. This set is a symbol of the diverse facets of love and connection, offering a versatile and stunning addition to your jewelry collection.",
                 "prices": 2000,
                 "img": "/img/set/IMG_4615.jpeg",
-                "images": ["", "", ""]
+                "images": ["/img/rings/heartRing1.jpeg", "/img/rings/heartRing2.jpeg", "/img/rings/heartRing4.jpeg"]
             }
 
 
@@ -284,7 +284,7 @@
                 "description": "Fall in love with our captivating 14k Yellow Gold Iced-Out Heart Ring, fully covered with dazzling Cubic Zirconia Diamonds and Baguette Cut Stones. This stunning ring, designed to fit a size 7.5 finger, is a symbol of the deep and enduring love that fills your heart.",
                 "prices": 490,
                 "img": "/img/rings/heartRing3.jpeg",
-                "images": ["", "", ""]
+                "images": ["/img/rings/heartRing1.jpeg", "/img/rings/heartRing2.jpeg", "/img/rings/heartRing4.jpeg"]
             },
             {
                 "id": 6,
@@ -292,7 +292,7 @@
                 "description": "Wear your initial with a touch of glamour with our 14k Yellow Gold Iced-Out 'R' Ring, fully adorned with dazzling Cubic Zirconia Diamonds. This ring exudes glamour and style designed to complement your unique fashion.",
                 "prices": 380,
                 "img": "/img/rings/bearring1.jpeg",
-                "images": ["", "", ""]
+                "images": ["/img/rings/bearring2.jpeg", "/img/rings/bearring3.jpeg", "/img/rings/bearring4.jpeg"]
             }
 
 
@@ -303,7 +303,7 @@
                 "description": "Adorn your wrist with our 14k Gold Multi-Stone Flower Bracelet, a delightful piece that flourishes with elegance and charm. This bracelet boasts multiple beautifully crafted flowers in white, yellow, and rose gold, creating a harmonious blend of colors. It serves as a tribute to the natural world's beauty and your personal style.",
                 "prices": 1025,
                 "img": "/img/bracelet/flowbracelet1.jpeg",
-                "images": ["", "", ""]
+                "images": ["/img/bracelet/flowbracelet2.jpeg", "/img/bracelet/flowbracelet3.jpeg", "/img/bracelet/flowbracelet4.jpeg"]
             },
 
             {
@@ -312,7 +312,7 @@
                 "description": "Adorn your wrist with our Classic 14k Yellow Gold 8-inch Cuban Bracelet. This versatile piece is perfect for daily wear, adding a touch of elegance to any outfit and making it an essential part of your daily wardrobe. Elevate your look with this exquisite Cuban bracelet.",
                 "prices": 2615,
                 "img": "/img/bracelet/14kbracelet1.JPG",
-                "images": ["", "", ""]
+                "images": ["/img/bracelet/14kbracelet2.JPG", "/img/bracelet/14kbracelet3.jpeg", "/img/bracelet/14kbracelet5.jpeg"]
             }
         ],
         "chain": [{
@@ -332,7 +332,7 @@
                 "images": ["", "", ""]
             },
             {
-                "id": 37,
+                "id": 38,
                 "name": "14k Gold 15-inch Unique Texture Link Chain",
                 "description": "Unveil your inner child with our 14k Yellow Gold Minion Character Chain adorned with Colored Cubic Zirconia Stones. This Minion Character Chain is a fun and fashionable piece that brings a smile to any occasion. Whether you’re a fan of these lovable characters or simply want to add a pop of color to your jewelry collection, this chain is a delightful choice that embodies charm and character.",
                 "prices": 2210,

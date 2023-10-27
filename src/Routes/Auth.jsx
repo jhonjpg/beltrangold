@@ -1,4 +1,4 @@
-import React, { useReducer, useRef, useState } from 'react';
+import React, { useReducer, useRef, useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from '../Pages/Home';
@@ -24,39 +24,48 @@ const Auth = () => {
   const pruduct = es
 
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitial);
-
   const productCount = state.productCount;
+  const [itemsAdded, setItemsAdded] = useState(0);
 
-  const [itemsAdded, setItemsAdded] = useState(0); // Initialize the count of items added
+  const loadCartFromLocalStorage = () => {
+    const cartData = localStorage.getItem('cartItems');
+    if (cartData) {
+      return JSON.parse(cartData);
+    }
+    return [];
+  };
 
+  const saveCartToLocalStorage = (cartItems) => {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  };
+  
+
+  useEffect(() => {
+    // Cargar el carrito desde el almacenamiento local al montar el componente
+    const cartData = loadCartFromLocalStorage();
+    if (cartData) {
+      dispatch({ type: TYPES.SET_CART, payload: cartData });
+      setItemsAdded(cartData.length);
+    }
+  }, []);
 
   const addToCart = (product) => {
-    // Ensure the product object includes the 'price' property
-      dispatch({ type: TYPES.ADD_TO_CART, payload: product });
-      console.log("Item added to the cart");
-  
-      // Increment the count of items added
-      setItemsAdded(itemsAdded + 1);
-   
+    dispatch({ type: TYPES.ADD_TO_CART, payload: product });
+    setItemsAdded(itemsAdded + 1);
+    // Guardar el carrito actualizado en el almacenamiento local
+    saveCartToLocalStorage([...state.cartItems, product]);
   };
   
   const removeFromCart = (product) => {
     dispatch({ type: TYPES.REMOVE_FROM_CART, payload: product });
-    console.log("Item removed from the cart");
-  
-    // Decrement the count of items added
     setItemsAdded(itemsAdded - 1);
+    // Guardar el carrito actualizado en el almacenamiento local
+    saveCartToLocalStorage(state.cartItems.filter(item => item.id !== product.id));
   };
-  
   const clearCart = () => {
     dispatch({ type: TYPES.CLEAR_CART });
-    console.log("Cart cleared");
-  
-    // Reset the count of items added to 0
     setItemsAdded(0);
   };
-  
-  
 
 
   
@@ -65,8 +74,8 @@ const Auth = () => {
     <BrowserRouter>
       <ScrollTop />
       <Navbar
-  cartItems={state.cartItems} // Pasar la lista de productos en el carrito desde el estado
-  CLEAR_CART={clearCart}
+        cartItems={state.cartItems}
+        clearCart={clearCart}
         removeFromCart={removeFromCart}
         itemsAdded={itemsAdded}
       />
@@ -118,6 +127,8 @@ const Auth = () => {
               jewerlrys={pruduct.BeltranCo.bracelet}
               route="bracelet"
               addToCart={addToCart}
+              itemsAdded={itemsAdded}
+
             />
           }
         />

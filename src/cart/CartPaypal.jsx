@@ -2,12 +2,31 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PayPalButton } from "react-paypal-button-v2";
 import emailjs from 'emailjs-com';
+import { StrictMode } from 'react';
 
 
 const CartPaypal = ({ cartItems, removeFromCart }) => {
 
   emailjs.init('jonathan050315jj@gmail.com');
 
+  useEffect(() => {
+    const cartData = localStorage.getItem('cartItems');
+    if (cartData) {
+      const parsedCartData = JSON.parse(cartData);
+      setCart(parsedCartData);
+    }
+  }, []);
+
+  const saveCartToLocalStorage = (updatedCart) => {
+    localStorage.setItem('cartItems', JSON.stringify(updatedCart));
+  };
+
+  const handleRemoveFromCart = (product) => {
+    const updatedCart = cart.filter((item) => item.id !== product.id);
+    setCart(updatedCart);
+    saveCartToLocalStorage(updatedCart);
+    removeFromCart(product);
+  };
 
 
   function sendOrderConfirmationEmail(orderData, userEmail) {
@@ -29,7 +48,6 @@ const CartPaypal = ({ cartItems, removeFromCart }) => {
   const [cart, setCart] = useState([]);
 
 
-  console.log(cart)
   const calculateTotalPrice = (cartItems) => {
 
     useEffect(() => {
@@ -55,7 +73,7 @@ const CartPaypal = ({ cartItems, removeFromCart }) => {
 
 
   return (
-    <div className="lg:flex lg:space-x-4 pt-20">
+    <div className="lg:flex lg:space-x-4 pt-20 z-30	">
       {/* Carrito */}
       <div className="lg:w-3/4">
         {cart.map((item) => (
@@ -73,7 +91,7 @@ const CartPaypal = ({ cartItems, removeFromCart }) => {
               Total: ${item.prices * item.quantity}
             </div>
             <button
-              onClick={() => removeFromCart(item)}
+              onClick={() => handleRemoveFromCart(item)}
               className="text-red-600 hover:underline"
             >
               Eliminar
@@ -90,24 +108,26 @@ const CartPaypal = ({ cartItems, removeFromCart }) => {
             <span>Total:</span>
             <span>${calculateTotalPrice(cart)}</span>
           </div>
-          <PayPalButton
-            amount={calculateTotalPrice(cart)}
-            options={{
-              clientId: 'ASn1-EDrFSXfqzAp_7p2Mierz2nI7YVnyt9LnR1Sklw9_WyTGf_rIjemsQ9kVCUxXmdzdUehl_-QqEEg',
-              currency: 'USD',
-            }}
-            onSuccess={(details, data) => {
-              // Handle the logic when the PayPal transaction is successful
-              console.log('Transaction completed:', details);
 
-              // Send an email using the sendEmail function
-              sendOrderConfirmationEmail(cart, 'tucorreo@gmail.com');
-            }}
-            onError={(error) => {
-              // Handle the logic when there is an error in the PayPal transaction
-              console.error('Error in PayPal transaction:', error);
-            }}
-          />
+          <StrictMode>
+  <PayPalButton
+    amount={calculateTotalPrice(cart)}
+    options={{
+      clientId: 'ASn1-EDrFSXfqzAp_7p2Mierz2nI7YVnyt9LnR1Sklw9_WyTGf_rIjemsQ9kVCUxXmdzdUehl_-QqEEg',
+      currency: 'USD',
+    }}
+    onSuccess={(details, data) => {
+      // Lógica cuando la transacción de PayPal sea exitosa
+      console.log('Transacción completada:', details);
+      sendOrderConfirmationEmail(cart, 'beltranco@gmail.com');
+    }}
+    onError={(error) => {
+      // Lógica en caso de error en la transacción de PayPal
+      console.error('Error en la transacción de PayPal:', error);
+    }}
+  />
+</StrictMode>
+
         </div>
       </div>
     </div>

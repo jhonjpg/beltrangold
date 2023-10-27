@@ -12,7 +12,7 @@ const Bracelet = () => {
     <section className="w-full flex flex-col ">
 
 
-<div className="portadN w-full h-96 flex  items-center justify-center">
+<div className="portadB w-full h-96 flex  items-center justify-center">
 
 <h3 className="text-5xl text-white text-yellow-300">bracelet</h3>
 

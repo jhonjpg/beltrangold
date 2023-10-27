@@ -91,17 +91,10 @@ const Home = () => {
 
 <section className="w-full h-72 flex flex-col items-center md:h-96">
 
-<div className="aboutImg w-full h-full  md:w-3/4 ">
-
-<h3 className="text-2xl text-amber-100">We are just jewerly</h3>
-
-<p className="text-xl text-zinc-100 w-full text-center">our pieces a merge of luxury vintage pieces for everyday wear </p>
-
-
-<button className="p-2 bg-yellow-600 w-28 rounded-lg">About</button>
-
-
-
+<div className="aboutImg w-full h-full md:w-3/4">
+  <h3 className="text-2xl text-amber-500 font-bold">Discover Luxury Jewelry</h3>
+  <p className="text-xl text-zinc-300 w-full text-center">Elevate Your Everyday Style with Our Exquisite Vintage Pieces</p>
+  <button className="p-2 bg-yellow-600 w-28 rounded-lg text-white font-semibold hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">Explore</button>
 </div>
 
 </section>
@@ -187,18 +180,12 @@ const Home = () => {
 
 <section className="w-full h-72">
 
-<div className="all">
-
-<h3 className="text-2xl text-zinc-100">We are just jewerly</h3>
-
-<p className="text-xl text-zinc-100 w-4/5">our pieces a merge of luxury vintage pieces for everyday wear </p>
-
-
-<button className="p-2 bg-yellow-600 w-32 rounded-lg">Comprar todo</button>
-
-
-
+<div className="all w-full h-full md:w-3/4">
+  <h3 className="text-4xl text-amber-500 font-extrabold">Indulge in Glamour</h3>
+  <p className="text-xl text-zinc-300 w-full text-center">Experience the Fusion of Timeless Elegance and Modern Chic</p>
+  <button className="p-3 bg-yellow-600 w-32 rounded-full text-white font-semibold hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">Discover Now</button>
 </div>
+
 
 </section>
 

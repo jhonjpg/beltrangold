@@ -1,69 +1,86 @@
-// Cart.js
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Cart = ({ cartItems, removeFromCart }) => {
-
+const Cart = ({ cartItems, removeFromCart, clearCart }) => {
   const [cart, setCart] = useState([]);
 
-  console.log(cart)
-  const calculateTotalPrice = (cartItems) => {
-
-    useEffect(() => {
-      // Cargar los datos del carrito desde el almacenamiento local al montar el componente
-      const cartData = localStorage.getItem('cartItems');
-      if (cartData) {
-        const parsedCartData = JSON.parse(cartData);
-        // Actualizar el estado del carrito con los datos del almacenamiento local
-        setCart(parsedCartData);
-      }
-    }, []);
-  
-    
+  const calculateTotalPrice = () => {
     let totalPrice = 0;
     for (const item of cart) {
       totalPrice += item.prices * item.quantity;
     }
     return totalPrice;
   };
-  
-  
-  
-  
-  return (
-    <>
-      {/* Iterate over cartItems and display each product */}
-      {cart.map((item) => (
-        <div key={item.id} className="flex p-2 bg-gray-400 cursor-pointer w-full hover:bg-gray-300 hover:scale-105">
-          {/* Display product details from item */}
-          <div className="flex w-full">
-            <div id="cart-image">
-              <div className="w-24 h-full overflow-hidden" data-mdb-ripple="true">
-              <img className="object-cover w-full h-50" src={item.img} alt={item.name} />
-              </div>
-            </div>
-            <div className="flex flex-col justify-between w-3/4 p-2">
-              <h2 className="w-full text-center text-2xl">{item.name}</h2>
-              <div className="flex mt-3 justify-around w-full">
-                <button className="p-1 bg-blue-600 text-white rounded-lg text-center">comprar</button>
-                <button onClick={() => removeFromCart()} className="p-1 bg-blue-600 text-white rounded-lg text-center">eliminar</button>
-              </div>
-            </div>
-            <div className="flex flex-col p-2 w-1/4">
-              <p className="w-full text-center">X{item.quantity}</p>
-              <h3 className="flex items-end w-full text-center">Total: {item.prices * item.quantity}</h3>
-            </div>
-          </div>
-        </div>
-      ))}
 
-<button className="flex justify-center m-auto bg-blue-500 text-white w-1/2 rounded-lg p-3">
-  <Link to="/BeltranJewelry/checkout">
-    Comprar Todo Total: ${calculateTotalPrice(cartItems)} USD
-  </Link>
-</button>
-    </>
+  useEffect(() => {
+    const cartData = localStorage.getItem('cartItems');
+    if (cartData) {
+      const parsedCartData = JSON.parse(cartData);
+      setCart(parsedCartData);
+    }
+  }, []);
+
+  const saveCartToLocalStorage = (updatedCart) => {
+    localStorage.setItem('cartItems', JSON.stringify(updatedCart));
+  };
+
+
+  const handleRemoveFromCart = (product) => {
+    const updatedCart = cart.filter((item) => item.id !== product.id);
+    setCart(updatedCart);
+    saveCartToLocalStorage(updatedCart);
+    removeFromCart(product);
+  };
+
+  return (
+    <div className="container mx-auto p-4">
+      <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
+      <div className="cart-container" style={{ maxHeight: '500px', overflowY: 'auto' }}>
+        {cart.length > 0 ? (
+          <div>
+            {cart.map((item) => (
+              <div key={item.id} className="bg-white shadow-md mb-4 p-4 rounded-lg relative">
+                <div className="flex items-center justify-between mb-2">
+                  <img src={item.img} alt={item.name} className="w-16 h-16" />
+                  <button
+                    onClick={() => handleRemoveFromCart(item)}
+                    className="text-red-500 font-semibold"
+                  >
+                    Remove
+                  </button>
+                </div>
+                <h3 className="text-lg font-semibold">{item.name}</h3>
+                <p className="text-gray-500">Price: ${item.prices}</p>
+                <p>Quantity: {item.quantity}</p>
+                <p className="text-blue-600 font-semibold">Total: ${item.prices * item.quantity}</p>
+              </div>
+            ))}
+          <div className="w-full flex gap-3 flex-wrap justify-center  items-center flex-col absolute bottom-10 sm:flex-row sm:items-center sm:justify-between md:justify-center  items-center">
+  <p className="text-xl text-center font-semibold mb-2 sm:mb-0">Total Price: ${calculateTotalPrice()}</p>
+
+  <div className="w-full flex  justify-evenly">
+    <button
+      onClick={() => clearCart()}
+      className="w-1/3 sm:w-auto bg-red-500 text-white rounded-lg p-1 mb-2 sm:mb-0"
+    >
+      Eliminar Todo
+    </button>
+
+    <div className="w-1/3 sm:w-auto bg-blue-500 text-white rounded-lg p-1">
+      <Link to="/BeltranCo/checkout" className="text-white p-3 rounded-lg block text-center">
+        Checkout
+      </Link>
+    </div>
+  </div>
+</div>
+
+          </div>
+        ) : (
+          <p>Your cart is empty</p>
+        )}
+      </div>
+    </div>
   );
-}
+};
 
 export default Cart;

@@ -237,14 +237,10 @@ export const shoppingInitial = {
     productCount: 0, // Agrega un contador de productos
 
 };
-const saveCartToLocalStorage = (cartItems) => {
-    localStorage.setItem('cartItems', JSON.stringify(cartItems));
-};
 
 // Define a function to load the cart from local storage
-export const loadCartFromLocalStorage = () => {
-    const cartItems = localStorage.getItem('cartItems');
-    return cartItems ? JSON.parse(cartItems) : [];
+const saveCartToLocalStorage = (cartItems) => {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
 };
 
 export const shoppingReducer = (state = shoppingInitial, action) => {
@@ -318,6 +314,13 @@ export const shoppingReducer = (state = shoppingInitial, action) => {
                 ...state,
                 cartItems: [], // Borra todos los elementos del carrito al despachar esta acción
                 productCount: 0, // Establece productCount a 0 al limpiar el carrito
+            };
+
+        case TYPES.SET_CART:
+            return {
+                ...state,
+                cartItems: action.payload, // Establece el carrito con los elementos proporcionados
+                productCount: action.payload.length, // Actualiza la cantidad de productos en el carrito
             };
 
         default:

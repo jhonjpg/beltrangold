@@ -9,8 +9,16 @@ import CartPaypal from '../cart/CartPaypal';
 
 
 
-const Navbar = ({cartItems, CLEAR_CART, removeFromCart, itemsAdded}) => {
+const Navbar = ({cartItems, clearCart, removeFromCart, itemsAdded}) => {
+  const [cart, setCart] = useState([]);
 
+  const calculateTotalPrice = () => {
+    let totalPrice = 0;
+    for (const item of cart) {
+      totalPrice += item.prices * item.quantity;
+    }
+    return totalPrice;
+  };
 
   const [shppingcart, setShppingcart] = useState(false);
 
@@ -147,7 +155,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
   <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" fill="black"></path>
 </svg>
 </div>
-        <ul className=" w-full h-screen flex flex-col items-center  gap-5  z-50 list-none p-3   uppercase oro	">
+        <ul className=" w-full h-screen z-50  flex flex-col items-center  gap-5  z-50 list-none p-3   uppercase oro	z-50">
 
 
 <div className="w-full h-72 ">
@@ -167,7 +175,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
       <li className="text-xl  w-full text-center  hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranCo/ring" >  {t('rings')}</Link></li>
     <li className="text-xl w-full text-center  hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranCo/pendant" >  {t('Pendant')}</Link></li>
     <li className="text-xl  w-full text-center hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranCo/chain" >  {t('chain')}</Link></li>
-    <li className="text-xl  w-full text-center hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranCo/chain" >  {t('todo')}</Link></li>
+    <li className="text-xl  w-full text-center hover:bg-slate-300"> <Link onClick={toggleMenu} to="/BeltranCo/bracelet" >  {t('bracelet')}</Link></li>
         </div>
       )}
             <li className="w-full text-2xl text-center "  > <Link onClick={toggleMenu} to="/BeltranCo/contact"   >  {t('contact')}</Link></li>
@@ -227,12 +235,8 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 <h1 className=" text-center  w-full p-3 text-black">Tu Carrito</h1>
 
 
-<Cart cartItems={cartItems} removeFromCart={removeFromCart} /> {/* Pass the cart items as a prop */}
-<div className="w-full">
+<Cart cartItems={cartItems} removeFromCart={removeFromCart} clearCart={clearCart}/> {/* Pass the cart items as a prop */}
 
-<button onClick={() => CLEAR_CART()} className=" flex justify-center m-auto bg-red-500 text-white w-1/2 rounded-lg p-3 ">Eliminar Todo</button>
-
-</div>
 
 </div>
 
@@ -275,7 +279,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
       <li className="w-24 hover:bg-slate-300"> <Link to="/BeltranCo/ring" >  {t('rings')}</Link></li>
     <li className="hover:bg-slate-300"> <Link to="/BeltranCo/pendant" >  {t('pendant')}</Link></li>
     <li className="hover:bg-slate-300"> <Link to="/BeltranCo/chain" >  {t('chain')}</Link></li>
-    <li className="hover:bg-slate-300"> <Link to="/BeltranCo/chain" >  {t('todo')}</Link></li>
+    <li className="hover:bg-slate-300"> <Link to="/BeltranCo/bracelet" >  {t('bracelet')}</Link></li>
         </div>
       )}
     </div>
@@ -325,12 +329,8 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 <h1 className=" text-center  w-full p-3 text-black">Tu Carrito</h1>
 
 
-<Cart cartItems={cartItems} removeFromCart={removeFromCart} /> {/* Pass the cart items as a prop */}
-<div className="w-full">
+<Cart cartItems={cartItems} removeFromCart={removeFromCart} clearCart={clearCart}  /> {/* Pass the cart items as a prop */}
 
-<button onClick={() => CLEAR_CART()} className=" flex justify-center m-auto bg-red-500 text-white w-1/2 rounded-lg p-3 ">Eliminar Todo</button>
-
-</div>
 
 </div>
 
