@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="w-full p-4 md:p-8 bg-yellow-50 text-white">
       <div className="flex flex-wrap justify-center">
         <div className="w-full md:w-1/4 text-center md:text-left mb-4 md:mb-0">
-          <img src="/bc.jpg" alt="" className="w-36 h-36 md:w-full md:h-auto rounded-full object-contain" />
+          <img src="./bc.jpg" alt="" className="w-36 h-36 md:w-full md:h-auto rounded-full object-contain" />
         </div>
         <div className="w-full md:w-1/4 text-center md:text-left mb-4 md:mb-0">
           <strong className="text-xl text-black">Información</strong>

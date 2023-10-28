@@ -222,7 +222,7 @@
                 "category": "pendant",
                 "name": "Colgante Pirámide Illuminati de Oro de 14k",
                 "description": "Descubre la mística de nuestro hermoso Colgante Pirámide Illuminati de Oro Amarillo de 14k, adornado con Diamantes de Circón Cúbico en blanco y negro, una pieza hipnotizante que irradia intriga y estilo.",
-                "prices": 510,
+                "prices": 1,
                 "img": "./img/pendant/soldier1.jpeg",
                 "images": ["./img/pendant/soldier2.jpeg", "./img/pendant/soldier3.jpeg", "./img/pendant/soldier4.jpeg"]
             },

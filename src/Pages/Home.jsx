@@ -180,7 +180,7 @@ const Home = () => {
 
 
 
-<section className="w-10/12 h-screen flex flex-col-reverse  gap-5 md:flex-row">
+<section className="w-10/12 h-screen flex flex-col-reverse  gap-5 md:flex-row md:h-96">
 
 <div className=" w-full h-3/4 ">
 
