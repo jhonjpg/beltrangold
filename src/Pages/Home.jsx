@@ -160,7 +160,7 @@ const Home = () => {
 <div className=" w-full h-3/4 ">
 
 <img className="w-full h-full object-cover object-center
-" src="/img/pendant/dominicanrepublic1.jpeg" alt="" />
+" src="./img/pendant/dominicanrepublic1.jpeg" alt="" />
 
 </div>
 
