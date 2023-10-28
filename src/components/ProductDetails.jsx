@@ -98,7 +98,7 @@
 //               className="w-2/4 h-52 flex flex-col justify-between gap-3 p-2 mb-3 md:w-1/4 h-80"
 //             >
 //               <Link
-//                 to={`/BeltranCo/${route}/${jewerlry.name}`}
+//                 to={`/beltrangold/${route}/${jewerlry.name}`}
 //                 className="w-full h-72 overflow-hidden"
 //               >
 //                 <img
@@ -199,7 +199,7 @@ function ProductDetail({ jewerlrys, route, addToCart }) {
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full md:w-28"
               onClick={() => alert('¡Producto comprado!')}
             >
-<Link to="/BeltranCo/checkout" className="text-white p-3 rounded-lg block text-center">
+<Link to="/beltrangold/checkout" className="text-white p-3 rounded-lg block text-center">
         Comprar
       </Link>            </button>
           </div>
@@ -226,7 +226,7 @@ function ProductDetail({ jewerlrys, route, addToCart }) {
               className="w-full md:w-2/4 h-72 md:h-52 flex flex-col justify-between p-4 md:p-2"
             >
               <Link
-                to={`/BeltranCo/${route}/${jewerlry.name}`}
+                to={`/beltrangold/${route}/${jewerlry.name}`}
                 className="w-full h-44 md:h-72 overflow-hidden"
               >
                 <img

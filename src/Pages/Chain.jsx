@@ -33,7 +33,7 @@ const Chain = () => {
     <ul className="flex w-full flex-wrap gap-3 justify-center ">
       {es.BeltranCo.chain.map((chain) => (
         <li key={chain.id} className=" w-2/5 h-52 flex flex-col justify-between gap-3 p-2 mb-3 md:w-1/4 h-80">
-        <Link to={`/BeltranCo/chain/${chain.name}`} className="w-full h-72 overflow-hidden">
+        <Link to={`/beltrangold/chain/${chain.name}`} className="w-full h-72 overflow-hidden">
           <img className="w-full h-full object-cover" src={chain.img} alt="" />
         </Link>
         <div className="h-12 w-full flex flex-col items-start">

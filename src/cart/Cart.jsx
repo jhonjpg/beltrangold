@@ -67,7 +67,7 @@ const Cart = ({ cartItems, removeFromCart, clearCart }) => {
     </button>
 
     <div className="w-1/3 sm:w-auto bg-blue-500 text-white rounded-lg p-1">
-      <Link to="/BeltranCo/checkout" className="text-white p-3 rounded-lg block text-center">
+      <Link to="/beltrangold/checkout" className="text-white p-3 rounded-lg block text-center">
         Checkout
       </Link>
     </div>
