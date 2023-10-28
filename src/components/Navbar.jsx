@@ -257,7 +257,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
   <div className="w-16 h-16 rounded-lg	 overflow-hidden">
 
 
-    <img className="w-full h-full object-cover" src="/bc.jpg" alt="" />
+    <img className="w-full h-full object-cover" src="./bc.jpg" alt="" />
   </div>
 
   <ul className="w-3/4 flex text-lg text-gray-700 justify-end gap-10 uppercase items-center z-20	">
