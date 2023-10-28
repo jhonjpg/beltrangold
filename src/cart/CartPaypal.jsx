@@ -5,7 +5,7 @@ import emailjs from 'emailjs-com';
 import { StrictMode } from 'react';
 
 
-const CartPaypal = ({ cartItems, removeFromCart }) => {
+const CartPaypal = ({ cartItems, removeFromCart,  }) => {
 
   emailjs.init('jonathan050315jj@gmail.com');
 
@@ -26,6 +26,7 @@ const CartPaypal = ({ cartItems, removeFromCart }) => {
     setCart(updatedCart);
     saveCartToLocalStorage(updatedCart);
     removeFromCart(product);
+
   };
 
 

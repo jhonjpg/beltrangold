@@ -4,11 +4,12 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { Autoplay,EffectCoverflow, Pagination } from 'swiper/modules';
-import es from '../18next/es.json';
+import { useTranslation } from 'react-i18next';
 
 
 const Testimonial = () => {
 
+  const { t } = useTranslation(); // Obtiene la función de traducción
 
     let slidesPerView = 1;
 
@@ -42,15 +43,15 @@ const Testimonial = () => {
     modules={[Autoplay, EffectCoverflow, Pagination]}
     className="mySwiper  h-full overflow-hidden"
   >
-      {es.testimonials.map((testimonial, index) => (
-        <SwiperSlide key={index} className="bg-amber-100 h-full flex flex-col gap-3 p-2">
-          <img className="w-full  giro  h-16 object-contain" src="diamon.png" alt="" />
+   {t('testimonials', { returnObjects: true }).map((testimonial, index) => (
+        <SwiperSlide key={index} className="bg-yellow-50 h-full flex flex-col gap-3 p-2">
+          <img className="w-full giro h-16 object-contain" src="diamon.png" alt="" />
           <span className="w-full text-black text-xl text-center">{testimonial.name}</span>
-          <p>{testimonial.testimonial}</p>
- <pre className="w-full text-center text-gray-400">Client</pre>
-
+          <p className="text-sm">{testimonial.testimonial}</p>
+          <pre className="w-full text-center text-gray-400">Client</pre>
         </SwiperSlide>
       ))}
+
     </Swiper>
   );
 };

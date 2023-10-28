@@ -18,6 +18,7 @@ import Pendant from '../Pages/Pendant';
 import CartPaypal from '../cart/CartPaypal';
 import Chain from '../Pages/Chain';
 import Bracelet from '../Pages/Bracelet';
+import AllProducts from '../Pages/AllProducts';
 
 
 const Auth = () => {
@@ -51,7 +52,12 @@ const Auth = () => {
 
   const addToCart = (product) => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: product });
-    setItemsAdded(itemsAdded + 1);
+    const itemCart = state.cartItems.find((item) => item.id === product.id);
+
+    // Increment itemsAdded only if it's a new product
+    if (!itemCart) {
+        setItemsAdded(itemsAdded + 1);
+    }
     // Guardar el carrito actualizado en el almacenamiento local
     saveCartToLocalStorage([...state.cartItems, product]);
   };
@@ -95,6 +101,10 @@ const Auth = () => {
             />
           }
         />
+
+<Route path="/beltrangold/jewelrys" element={<AllProducts/>} />
+
+
         <Route path="/beltrangold/pendant" element={<Pendant />} />
         <Route
           path="/beltrangold/pendant/:productName"
@@ -127,6 +137,7 @@ const Auth = () => {
               jewerlrys={pruduct.BeltranCo.bracelet}
               route="bracelet"
               addToCart={addToCart}
+              
               itemsAdded={itemsAdded}
 
             />
@@ -134,7 +145,8 @@ const Auth = () => {
         />
         <Route path="/beltrangold/contact" element={<Contact />} />
 
-        <Route path="/beltrangold/checkout"     element={<CartPaypal cartItems={state.cartItems}/>}></Route> 
+        <Route path="/beltrangold/checkout"     element={<CartPaypal cartItems={state.cartItems}         removeFromCart={removeFromCart}
+/>}></Route> 
 
 
         <Route path="*" element={<PageNotFound />} />

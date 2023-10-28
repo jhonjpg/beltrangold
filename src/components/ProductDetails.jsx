@@ -121,6 +121,7 @@
 //     </>
 //   );
 // }
+
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
@@ -132,8 +133,36 @@ import { Navigation } from 'swiper/modules';
 import { useTranslation } from 'react-i18next';
 
 function ProductDetail({ jewerlrys, route, addToCart }) {
-  const { t } = useTranslation('translation');
 
+
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxImage, setLightboxImage] = useState('');
+
+  <style>
+  {`
+    .lightbox-container {
+      display: ${lightboxOpen ? 'block' : 'none'};
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox-image {
+      max-width: 80%;
+      max-height: 80%;
+      object-fit: contain;
+    }
+  `}
+</style>
+
+  const { t } = useTranslation('translation');
   const { productName } = useParams();
   const product = jewerlrys.find((jewerlry) => jewerlry.name === productName);
 
@@ -150,10 +179,16 @@ function ProductDetail({ jewerlrys, route, addToCart }) {
   }
 
   return (
-    <div className="min-h-screen p-4 md:p-8 oro">
+    <>
+    <div className="min-h-screen p-4 pt-20 md:p-8 oro">
       <div className=" shadow-lg flex flex-col md:flex-row max-w-screen-xl mx-auto space-y-4 md:space-x-8 p-4 md:p-8 justify-center items-center">
         {/* Product Image */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2"    onClick={() => {
+        setLightboxOpen(true);
+        setLightboxImage(product.img);
+      }}
+      style={{ cursor: 'pointer' }}
+    >
           <img
             className="w-full h-auto md:h-96 object-cover"
             src={'../' + product.img}
@@ -237,13 +272,16 @@ function ProductDetail({ jewerlrys, route, addToCart }) {
               </Link>
               <div className="h-16 w-full flex flex-col items-start">
                 <span className="text-lg md:text-xl text-black">{jewerlry.name}</span>
-                <p className="text-gray-600">{jewerlry.prices}</p>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
     </div>
+
+
+
+</>
   );
 }
 

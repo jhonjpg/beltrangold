@@ -18,7 +18,32 @@ import Testimonial from '../components/Testimonial';
 const Home = () => {
 
   const { t } = useTranslation(); // Obtiene la función de traducción
+  const scrollTargetRef = useRef(null);
 
+  const scrollDown = () => {
+    // Obtén el elemento al que deseas desplazarte usando el ref
+    const scrollTarget = scrollTargetRef.current;
+
+    if (scrollTarget) {
+      // Calcula la posición de desplazamiento
+      let scrollPosition = scrollTarget.offsetTop;
+
+      // Verifica si es un dispositivo móvil (ajusta este ancho según tus necesidades)
+      const isMobile = window.innerWidth <= 768; // Puedes ajustar el valor de 768 según lo que consideres como dispositivo móvil.
+
+      if (isMobile) {
+        scrollPosition += 150;
+      } else {
+        scrollPosition += 300;
+      }
+
+      // Realiza el desplazamiento suave
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
   return (
 
     <>
@@ -37,17 +62,17 @@ const Home = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
-        navigation={true}
+        navigation={false}
         pagination={{
-          clickable: true,
+          clickable: false,
         }}
         modules={[ Autoplay, EffectFade, Navigation, Pagination]}
         className="mySwiper w-full h-full overflow-hidden"
       >
-         <SwiperSlide><div className="w-full h-full  "><img className="w-full h-full object-cover object-center	" src="/img/rings/heartRing3.jpeg" alt=""  /></div></SwiperSlide>
-      <SwiperSlide><div className="w-full h-full "><img className="w-full h-full object-cover object-center	" src="/img/pendant/soldier1.jpeg" alt=""  /></div></SwiperSlide>
-      <SwiperSlide><div className="w-full h-full "><img className="w-full h-full object-cover object-center	" src="/img/chain/minium1.jpeg" alt=""  /></div></SwiperSlide>
-      <SwiperSlide><div className="w-full h-full "><img className="w-full h-full object-cover object-center	" src="/img/set/IMG_4615.jpeg" alt=""  /></div></SwiperSlide>
+         <SwiperSlide><div className="w-full h-full  "><img className="w-full h-full object-cover object-center	" src="./img/rings/heartRing3.jpeg" alt=""  /></div></SwiperSlide>
+      <SwiperSlide><div className="w-full h-full "><img className="w-full h-full object-cover object-center	" src="./img/pendant/soldier1.jpeg" alt=""  /></div></SwiperSlide>
+      <SwiperSlide><div className="w-full h-full "><img className="w-full h-full object-cover object-center	" src="./img/chain/minium1.jpeg" alt=""  /></div></SwiperSlide>
+      <SwiperSlide><div className="w-full h-full "><img className="w-full h-full object-cover object-center	" src="./img/set/IMG_4615.jpeg" alt=""  /></div></SwiperSlide>
       
       </Swiper>
 
@@ -58,7 +83,7 @@ const Home = () => {
     <h1 className="text-4xl md:text-6xl font-bold mb-4">{t('exploreElegance')}</h1>
             <p className="text-lg md:text-xl">{t('exclusiveJewelryCollection')}</p>
             <p className="text-lg md:text-xl">{t('forCouplesAndLuxuryLovers')}</p>
-            <button className="bg-white w-40 text-black font-bold py-2 px-4 mt-4">
+            <button className="bg-white w-40 text-black font-bold py-2 px-4 mt-4" onClick={scrollDown} ref={scrollTargetRef} >
               {t('discoverMore')}
             </button>
     </div>
@@ -73,7 +98,7 @@ const Home = () => {
 
 <div className="w-full flex justify-between mb-5 md:w-3/4">
 
-<span className="text-lg text-black">{t('signatureRings')}</span>
+<span className="text-lg text-black">{t('jewelrycollection')}</span>
               <a className="text-lg" href="#">
                 {t('viewAll')}
               </a>
@@ -97,7 +122,7 @@ const Home = () => {
 
 <section className="w-full h-72 flex flex-col items-center md:h-96">
           <div className="aboutImg w-full h-full md:w-3/4">
-            <h3 className="text-2xl text-amber-500 font-bold">{t('discoverLuxuryJewelry')}</h3>
+            <h3 className="text-2xl text-amber-500 font-bold">{t('discoverMore')}</h3>
             <p className="text-xl text-zinc-300 w-full text-center">{t('elevateYourStyle')}</p>
             <button className="p-2 bg-yellow-600 w-28 rounded-lg text-white font-semibold hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
               {t('explore')}
@@ -113,7 +138,7 @@ const Home = () => {
 
 <div className="w-full flex justify-center mb-5">
 
-<span className="text-lg w-10/12 md:w-3/4">Shop Collection</span>
+<span className="text-lg w-10/12 md:w-3/4">{t('OurPieces')}</span>
 
 
 
@@ -142,7 +167,7 @@ const Home = () => {
 
 <section className="w-full h-72 flex flex-col items-center h-96 md:w-3/4">
 
-    <h5 className="w-2/4 text-center pb-3 border-b-4 border-amber-100 border-solid  text-2xl mb-5 ">TESTIMONIALS</h5>
+    <h5 className="w-2/4 text-center pb-3 border-b-4 border-yellow-50 border-solid  text-2xl mb-5 ">{t('testimonial')}</h5>
 
 <div className="w-full h-96 overflow-hidden p-7">
 
@@ -155,7 +180,7 @@ const Home = () => {
 
 
 
-<section className="w-10/12 h-96 flex flex-col gap-5 md:flex-row">
+<section className="w-10/12 h-screen flex flex-col-reverse  gap-5 md:flex-row">
 
 <div className=" w-full h-3/4 ">
 
@@ -164,14 +189,14 @@ const Home = () => {
 
 </div>
 
-<div className="w-full h-auto md:flex flex-col items-center justify-center gap-3 md:items-start justify-center h-auto gap-5">
-      <h5 className="text-3xl text-yellow-600 text-center md:text-left">
+<div className="w-full h-auto md:flex flex-col items-center justify-center gap-3 md:items-center justify-center h-auto gap-5">
+      <h5 className="text-3xl text-yellow-500 text-center md:text-left">
         {t('trendingTitle')}
       </h5>
       <p className="text-lg text-center md:text-left">
         {t('trendingDescription')}
       </p>
-      <button className="bg-yellow-500 p-2 mx-auto md:ml-0">
+      <button className="bg-yellow-500 p-2 mx-auto md:ml-50">
         {t('shopNowTrend')}
       </button>
     </div>
@@ -179,20 +204,19 @@ const Home = () => {
 
 
 
-
-<section className="w-full h-72">
-
-<div className="all w-full h-full md:w-3/4">
-  <h3 className="text-4xl text-amber-500 font-extrabold">Indulge in Glamour</h3>
-  <p className="text-xl text-zinc-300 w-full text-center">Experience the Fusion of Timeless Elegance and Modern Chic</p>
-  <button className="p-3 bg-yellow-600 w-32 rounded-full text-white font-semibold hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">Discover Now</button>
-</div>
-
-
-</section>
-
-
-
+<section className="w-full h-72 md:flex justify-center ">
+      <div className="all w-full h-full md:w-3/4 shadow-xl" >
+        <h3 className="text-4xl text-amber-500 font-extrabold">
+          {t('Sectiontext')}
+        </h3>
+        <p className="text-xl text-zinc-300 w-full text-center">
+          {t('Sectiondescription')}
+        </p>
+        <button className="p-3 bg-yellow-600 w-40 rounded-full text-white font-semibold hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
+          {t('Sectionbutton')}
+        </button>
+      </div>
+    </section>
 </main>
 
 </>

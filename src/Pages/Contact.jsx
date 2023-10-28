@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <>
       <section className="contact w-screen h-screen flex flex-col items-center justify-evenly">
-        <h2 className="text-5xl text-slate-400">CONTACT US</h2>
+        <h2 className="text-5xl oro">CONTACT US</h2>
       </section>
 
       <section className="skin w-full flex flex-col items-center gap-1 md:flex-row">
@@ -36,21 +36,21 @@ const Contact = () => {
           <p className="mb-5 w-96">Feel free to contact us and we will get back to you as soon as we can</p>
           <form onSubmit={handleSubmit}>
             <input
-              className="w-72 bg-slate-100"
+              className="w-72 oro"
               type="text"
               placeholder="Name"
               value={name}
               onChange={handleNameChange}
             />
             <input
-              className="w-72 bg-slate-100"
+              className="w-72 oro"
               type="text"
               placeholder="Email"
               value={email}
               onChange={handleEmailChange}
             />
             <textarea
-              className="bg-slate-100"
+              className="oro"
               name="message"
               id="message"
               cols="33"
@@ -59,11 +59,11 @@ const Contact = () => {
               value={message}
               onChange={handleMessageChange}
             ></textarea>
-            <input className="bg-slate-100 text-slate-500 text-black w-20 text-center p-2" type="submit" value="SEND" />
+            <input className="oro text-slate-500 text-black w-20 text-center p-2" type="submit" value="SEND" />
           </form>
         </div>
 
-        <ul className="w-full h-full flex flex-col items-center gap-5 bg-slate-100 p-3">
+        <ul className="w-full h-full flex flex-col items-center gap-5 oro p-3">
           <li>
             <pre className="text-gray-400 w-full text-center">OPENING HOURS</pre>
             <p className="text-xl w-full text-center">Monday-Friday</p>

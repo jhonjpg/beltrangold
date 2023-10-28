@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 body {
     background-color: #e1d7ce;
+    font-family: 'Playfair Display', serif;
 }
 
 .oro {
@@ -14,7 +16,7 @@ body {
 }
 
 footer {
-    background-color: #e1d7ce !important;
+    background-color: #ddc8b6 !important;
 }
 
 .navbar {
@@ -88,7 +90,7 @@ footer {
 }
 
 .all {
-    background-image: url("https://images.pexels.com/photos/9431873/pexels-photo-9431873.jpeg?auto=compress&cs=tinysrgb&w=800");
+    background-image: url("https://images.pexels.com/photos/9430463/pexels-photo-9430463.jpeg?auto=compress&cs=tinysrgb&w=800");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -130,7 +132,7 @@ footer {
 }
 
 .contact {
-    background-image: url("https://cdn.pixabay.com/photo/2017/08/07/04/24/diamonds-2599816_1280.jpg   ");
+    background-image: url("https://images.pexels.com/photos/9430992/pexels-photo-9430992.jpeg?auto=compress&cs=tinysrgb&w=800 ");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -260,6 +262,24 @@ form {
         overflow: hidden;
         transition-duration: .3s;
         background-color: rgb(187, 187, 187);
+    }
+}
+
+.animated-element {
+    animation-name: slideFromRight;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+        /* Start outside of the view on the right */
+    }
+    to {
+        transform: translateX(0);
+        /* Move to the left (final position) */
     }
 }
 

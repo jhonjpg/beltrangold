@@ -77,7 +77,7 @@ const Navbar = ({cartItems, clearCart, removeFromCart, itemsAdded}) => {
 
 
   const change = (e) => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 50) {
   
     setmenu(false)
   } else {
@@ -168,13 +168,13 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
          <li className="w-full text-2xl text-center"  > <Link  onClick={toggleMenu} to="/beltrangold/about"    >  {t('about')}</Link></li>
        
       <li className=" w-full text-2xl text-center" onClick={handleclick}
-      >PRODUCT</li>
+      >{t('jewelrys')}</li>
       {isNav && (
         <div className="relative npm, ">
-      <li className="text-xl  w-full text-center  hover:bg-slate-300"> <Link onClick={toggleMenu} to="/beltrangold/ring" >  {t('rings')}</Link></li>
-    <li className="text-xl w-full text-center  hover:bg-slate-300"> <Link onClick={toggleMenu} to="/beltrangold/pendant" >  {t('Pendant')}</Link></li>
-    <li className="text-xl  w-full text-center hover:bg-slate-300"> <Link onClick={toggleMenu} to="/beltrangold/chain" >  {t('chain')}</Link></li>
-    <li className="text-xl  w-full text-center hover:bg-slate-300"> <Link onClick={toggleMenu} to="/beltrangold/bracelet" >  {t('bracelet')}</Link></li>
+      <li className="text-xl  w-full text-center  hover:bg-yellow-50"> <Link onClick={toggleMenu} to="/beltrangold/ring" >  {t('rings')}</Link></li>
+    <li className="text-xl w-full text-center  hover:bg-yellow-50"> <Link onClick={toggleMenu} to="/beltrangold/pendant" >  {t('Pendant')}</Link></li>
+    <li className="text-xl  w-full text-center hover:bg-yellow-50"> <Link onClick={toggleMenu} to="/beltrangold/chain" >  {t('chain')}</Link></li>
+    <li className="text-xl  w-full text-center hover:bg-yellow-50"> <Link onClick={toggleMenu} to="/beltrangold/bracelet" >  {t('bracelet')}</Link></li>
         </div>
       )}
             <li className="w-full text-2xl text-center "  > <Link onClick={toggleMenu} to="/beltrangold/contact"   >  {t('contact')}</Link></li>
@@ -183,10 +183,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
 
 
-            <button className="text-black mt-20	 z-10" onClick={currentLanguage === 'es' ? changeToEnglish : changeToSpanish}>
-<h2 className="text-white flex justify-center items-center gap-3 overflow-hidden h-30"> <div className="w-8 h-8"><img src={buttonImage} className="w-full h-full object-contain" alt="flags"/> </div>
-  </h2>
-         </button>
+        
         </ul>
         </div>
       )}
@@ -215,32 +212,37 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
 
 </a>
+</div>
 
 
 
-<button className="w-16  p-2 h-full flex items-center justify-center hover:bg-slate-100" onClick={currentLanguage === 'es' ? changeToEnglish : changeToSpanish}>
-      <h2 className="text-slate-700 flex justify-center items-center gap-3 overflow-hidden h-30"><div className="w-8 h-8"><img src={buttonImage} className="w-full h-full object-contain" alt="flags"/> </div>
+
+<button className="w-16  p-2 h-full flex items-center justify-center hover:bg-yellow-50" onClick={currentLanguage === 'es' ? changeToEnglish : changeToSpanish}>
+      <h2 className="text-yellow-50 flex justify-center items-center gap-3 overflow-hidden h-30"><div className="w-8 h-8"><img src={buttonImage} className="w-full h-full object-contain" alt="flags"/> </div>
       </h2>
     </button>
 
-
-</div>
+    <Link to="/beltrangold/jewelrys" >  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" viewBox="0 0 16 16">
+  <path d="M10.646 9.646a5 5 0 1 1 1.414-1.414l3.852 3.853-1.414 1.414-3.852-3.853zm-.354-1.414a3 3 0 1 0-1.414 1.414 3 3 0 0 0 1.414-1.414z"/>
+</svg></Link>
 
 {shppingcart && (
-<div  className={`w-10/12 flex cursor-pointer fixed top-0 right-0 md:w-1/3	 h-screen justify-center z-10	 ${shppingcart ? "visible" : "invisible"}`} >
+  <div  onClick={cartClick} className={`flex cursor-pointer fixed top-0 right-0 w-screen bg-black/25	 h-screen justify-end items-center z-10	 ${shppingcart ? "visible" : "invisible"}`} >
 
 
-<div  className=" flex flex-col pt-10  w-full h-full bg-amber-100  gap-3  " data-mdb-zoom-effect="true">
+<div  className=" animated-element flex flex-col pt-2  w-2/3	 h-5/6	 oro	  gap-3 relative z-20	  " data-mdb-zoom-effect="true">
 
-<Cart cartItems={cartItems} removeFromCart={removeFromCart} clearCart={clearCart}/> {/* Pass the cart items as a prop */}
+
+<Cart cartItems={cartItems} removeFromCart={removeFromCart} clearCart={clearCart}  /> {/* Pass the cart items as a prop */}
+
+
+</div>
+
+
 
 
 </div>
 
-
-
-
-</div>
 
 )}
 
@@ -261,8 +263,8 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
   </div>
 
   <ul className="w-3/4 flex text-lg text-gray-700 justify-end gap-10 uppercase items-center z-20	">
-    <li className="p-2 hover:bg-slate-100"> <Link exact="true" to="/beltrangold/" className="w-full h-full"  >  {t('home')}</Link></li>
-    <li className="p-2 hover:bg-slate-100"> <Link to="/beltrangold/about" >
+    <li className="p-2 hover:bg-yellow-50"> <Link exact="true" to="/beltrangold/" className="w-full h-full"  >  {t('home')}</Link></li>
+    <li className="p-2 hover:bg-yellow-50"> <Link to="/beltrangold/about" >
         {t('about')}</Link></li>
 
         <div
@@ -270,18 +272,36 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <select className="dropdown-button bg-transparent" ><option value="product">PRODUCT</option></select>
-      {isMenuOpen && (
-        <div className="dropdown-menu relative bg-slate-100 top-20 w-30">
-      <li className="w-24 hover:bg-slate-300"> <Link to="/beltrangold/ring" >  {t('rings')}</Link></li>
-    <li className="hover:bg-slate-300"> <Link to="/beltrangold/pendant" >  {t('pendant')}</Link></li>
-    <li className="hover:bg-slate-300"> <Link to="/beltrangold/chain" >  {t('chain')}</Link></li>
-    <li className="hover:bg-slate-300"> <Link to="/beltrangold/bracelet" >  {t('bracelet')}</Link></li>
-        </div>
-      )}
+    <div className="relative inline-block">
+  <select className="dropdown-button bg-transparent">
+    <option value="product">{t('jewelrys')}</option>
+  </select>
+  {isMenuOpen && (
+    <div className="dropdown-menu absolute bg-yellow-50 top-5 right-0 w-36 py-2 mt-2 shadow-md border border-gray-300 rounded-md">
+      <ul className="divide-y divide-gray-300">
+      <li className="hover:bg-yellow-50 p-2">
+          <Link to="/beltrangold/jewelrys">{t('TODO')}</Link>
+        </li>
+        <li className="hover:bg-yellow-50 p-2">
+          <Link to="/beltrangold/ring">{t('rings')}</Link>
+        </li>
+        <li className="hover:bg-yellow-50 p-2">
+          <Link to="/beltrangold/pendant">{t('pendant')}</Link>
+        </li>
+        <li className="hover:bg-yellow-50 p-2">
+          <Link to="/beltrangold/chain">{t('chain')}</Link>
+        </li>
+        <li className="hover:bg-yellow-50 p-2">
+          <Link to="/beltrangold/bracelet">{t('bracelet')}</Link>
+        </li>
+      </ul>
+    </div>
+  )}
+</div>
+
     </div>
    
-    <li className="p-2 hover:bg-slate-100"> <Link to="/beltrangold/contact" >  {t('contact')}</Link></li>
+    <li className="p-2 hover:bg-yellow-50"> <Link to="/beltrangold/contact" >  {t('contact')}</Link></li>
 
    
 
@@ -310,20 +330,27 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
 
 
-<button className="w-16  p-2 h-full flex items-center justify-center hover:bg-slate-100" onClick={currentLanguage === 'es' ? changeToEnglish : changeToSpanish}>
-      <h2 className="text-slate-700 flex justify-center items-center gap-3 overflow-hidden h-30"> <div className="w-8 h-8"><img src={buttonImage} className="w-full h-full object-contain" alt="flags"/> </div>
-      </h2>
-    </button>
+
 
 
 </div>
 
+<button className="w-16  p-2 h-full flex items-center justify-center hover:bg-yellow-50" onClick={currentLanguage === 'es' ? changeToEnglish : changeToSpanish}>
+      <h2 className="text-yellow-50 flex justify-center items-center gap-3 overflow-hidden h-30"> <div className="w-8 h-8"><img src={buttonImage} className="w-full h-full object-contain" alt="flags"/> </div>
+      </h2>
+    </button>
+
+    <Link to="/beltrangold/jewelrys" >  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" viewBox="0 0 16 16">
+  <path d="M10.646 9.646a5 5 0 1 1 1.414-1.414l3.852 3.853-1.414 1.414-3.852-3.853zm-.354-1.414a3 3 0 1 0-1.414 1.414 3 3 0 0 0 1.414-1.414z"/>
+</svg></Link>
+
+
+
 {shppingcart && (
-<div  className={`flex cursor-pointer fixed top-0 right-0 w-1/3	 h-screen justify-center z-10	 ${shppingcart ? "visible" : "invisible"}`} >
+<div  onClick={cartClick} className={`flex cursor-pointer fixed top-0 right-0 w-screen bg-black/25	 h-screen justify-end items-center z-10	 ${shppingcart ? "visible" : "invisible"}`} >
 
 
-<div  className=" flex flex-col pt-10  w-full h-full bg-amber-100  gap-3  " data-mdb-zoom-effect="true">
-<h1 className=" text-center  w-full p-3 text-black">Tu Carrito</h1>
+<div  className=" animated-element flex flex-col pt-2  w-1/3	 h-5/6	 oro	  gap-3 relative z-20	  " data-mdb-zoom-effect="true">
 
 
 <Cart cartItems={cartItems} removeFromCart={removeFromCart} clearCart={clearCart}  /> {/* Pass the cart items as a prop */}

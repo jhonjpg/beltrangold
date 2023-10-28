@@ -275,7 +275,7 @@ export const shoppingReducer = (state = shoppingInitial, action) => {
                     },
                 ];
 
-                // Incrementa el contador de productos solo si es un producto nuevo
+                // Incrementa el counter solo si es un producto nuevo
                 const updatedProductCount = state.productCount + 1;
 
                 // Guarda el carrito actualizado en el almacenamiento local
@@ -287,6 +287,7 @@ export const shoppingReducer = (state = shoppingInitial, action) => {
                     productCount: updatedProductCount,
                 };
             }
+
 
         case TYPES.REMOVE_FROM_CART:
             // Verifica si action.payload está definido y tiene una propiedad 'id'

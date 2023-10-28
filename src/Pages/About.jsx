@@ -1,5 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
 
 const About = () => {
   const { t } = useTranslation(); // Obtiene la función de traducción
@@ -25,9 +27,10 @@ const About = () => {
             <p className="text-gray-500 w-10/12 text-sm">
               {t('skilledArtisans')}
             </p>
-            <button className="p-2 w-32 text-gray-400 border-2 border-gray-400 border-solid hover:bg-gray-300 hover:text-white ease-linear duration-75">
-              {t('contactUs')}
-            </button>
+           
+            <button className="p-2 w-40 text-gray-400 border-2 border-gray-400 border-solid hover:bg-gray-300 hover:text-white ease-linear duration-75">
+<Link to="/beltrangold/contact"> {t('contactUs')}</Link></button>
+
           </div>
         </article>
         <div className="w-full h-60 overflow-hidden md:w-2/4 md:h-5/6">
