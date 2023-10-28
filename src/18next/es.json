@@ -1,52 +1,46 @@
 {
+
     "home": "Inicio",
-    "about": "Sobre mi",
-    "rings": "anillo",
-    "bracelets": "brasalete",
-    "necklaces": "collar",
+    "about": "Acerca de",
+    "product": "Productos",
+    "rings": "Anillos",
+    "pendant": "Colgante",
+    "chain": "Cadena",
+    "bracelet": "Pulsera",
     "contact": "Contacto",
     "desarrolladorWeb": "DESARROLLADOR WEB",
     "jpDesigner": "JP DESIGNER",
     "descripcion": "Encargado de crear y mantener sitios web con habilidades en programación y diseño, así como un conocimiento profundo de lenguajes y tecnologías relacionadas con el desarrollo web",
     "iniciar": "INICIAR",
-    "servicesList": [{
-            "icon": "bi bi-braces",
-            "title": "Diseño y Desarrollo Web",
-            "description": "Crear sitios web personalizados y funcionales para empresas, emprendedores, instituciones educativas y organizaciones.",
-            "points": ["Diseño de Escritorio", "Diseño de Teléfono", "Diseño de Tablet"],
-            "buttonText": "Leer Más"
-        },
-        {
-            "icon": "bi bi-activity",
-            "title": "Optimización para Motores de Búsqueda (SEO)",
-            "description": "Ayudar a mejorar el posicionamiento de los sitios web en los motores de búsqueda mediante prácticas de SEO y optimización de contenido.",
-            "points": ["Impulsar la clasificación de Google", "Crecimiento de tráfico orgánico", "Optimización de velocidad de página"]
-        },
-        {
-            "icon": "bi bi-crop",
-            "title": "Diseño UI/UX",
-            "description": "Diseñamos y Desarrollamos poderosos y modernos sitios web para todo tipo de negocios.",
-            "points": ["Diseño de Escritorio", "Diseño de Teléfono", "Diseño de Tablet"]
-        },
-        {
-            "icon": "bi bi-phone",
-            "title": "Diseño Responsivo",
-            "description": "Asegurarse de que los sitios web se vean y funcionen bien en diferentes dispositivos, como computadoras de escritorio, tabletas y teléfonos móviles.",
-            "points": ["Diseño de Escritorio", "Diseño de Teléfono", "Diseño de Tablet"]
-        },
-        {
-            "icon": "bi bi-arrow-clockwise",
-            "title": "Mantenimiento y Actualización de Sitios Web",
-            "description": "Ofrecer servicios de mantenimiento y actualización periódica para asegurar que los sitios web estén siempre actualizados y funcionando correctamente.",
-            "points": ["Diseño de Escritorio", "Diseño de Teléfono", "Diseño de Tablet"]
-        },
-        {
-            "icon": "bi bi-people",
-            "title": "Consultoría y Asesoramiento",
-            "description": "Brindar asesoramiento técnico y consultoría sobre las mejores prácticas, tecnologías y estrategias para mejorar la presencia en línea de los clientes.",
-            "points": ["Diseño de Escritorio", "Diseño de Teléfono", "Diseño de Tablet"]
-        }
-    ],
+    "exploreElegance": "Explora la Elegancia Única",
+    "exclusiveJewelryCollection": "Colección Exclusiva de Joyería de Diamantes",
+    "forCouplesAndLuxuryLovers": "Para Parejas y Amantes del Lujo",
+    "signatureRings": "ANILLOS DE LA FIRMA",
+    "viewAll": "Ver Todo",
+    "discoverMore": "Descubre Más",
+    "elevateYourStyle": "Eleva tu estilo diario con nuestras exquisitas piezas vintage",
+    "exploreLuxuryJewelry": "Descubre joyería de lujo",
+    "explore": "Explorar",
+    "shopCollection": "Colección de Compras",
+    "trendingInSS21": "TENDENCIAS EN PRIMAVERA/VERANO '21",
+    "goldHoops": "Aros de oro croissant para elevar tu look de verano",
+    "shopNow": "Comprar Ahora",
+    "indulgeInGlamour": "Disfruta del Glamour",
+    "fusionOfEleganceAndChic": "Experimenta la fusión de elegancia atemporal y estilo moderno",
+    "discoverNow": "Descubre Ahora",
+    "trendingTitle": "Lo Más Vendido en Verano '21",
+    "trendingDescription": "Descubre nuestros elegantes aros de oro para darle un toque especial a tu look de verano.",
+    "shopNowTrend": "Comprar Ahora",
+
+
+    "aboutUs": "Sobre nosotros",
+    "transformingMoments": "Transformando momentos en tesoros que duran para siempre",
+    "welcomeText": "Bienvenidos a Beltrajj, donde una pasión por la artesanía excepcional se fusiona con la belleza atemporal de la joyería.",
+    "aboutUsPage": "Página de Acerca de BeltranCo:\n\nBeltranCo, originalmente conocida como Joyería Beltran, lleva consigo una rica herencia en la industria de la joyería fina, con más de 35 años de experiencia como negocio familiar.\n\nEn BeltranCo, nuestro compromiso inquebrantable es brindar a nuestros valiosos clientes los mejores productos y un servicio al cliente excepcional. No dejamos piedra sin remover, inspeccionando meticulosamente cada pieza de nuestra colección para que cumpla con los estándares que hemos mantenido a lo largo de nuestra historia.\n\nUna de las características distintivas de nuestros servicios es nuestra entrega rápida, con una promesa de envío de 2-3 días que refleja nuestra dedicación para satisfacer sus necesidades de manera oportuna. Esperamos con ansias no solo cumplir, sino superar sus expectativas y esperamos la oportunidad de que se una a nuestra comunidad de valiosos clientes.\n\nGracias por elegir BeltranCo, donde la calidad y el servicio van de la mano. Como siempre, compre con confianza, porque en BeltranCo, ¡su satisfacción es nuestra meta definitiva!",
+    "skilledArtisans": "Nuestros hábiles artesanos ponen su corazón en la creación de cada joya, asegurando que cuente una historia que sea única para usted. Ya sea un anillo de compromiso que simboliza el comienzo de un hermoso capítulo o un collar que captura la esencia de un recuerdo querido, nuestra joyería se convierte en parte de su narrativa personal.",
+    "contactUs": "CONTÁCTANOS",
+
+
 
     "projects": "PROYECTOS",
     "categories": {
@@ -111,24 +105,24 @@
                 "name": "14k Gold Beltran Jewelry Bear Pendant x5 Emerald, Ruby, Rose, Crystal, Sapphire",
                 "description": "Indulge in the allure of our 14k Yellow Gold Beltran Jewelry Bear Pendant, a one-of-a-kind masterpiece fully covered with Cubic Zirconia Diamonds and a selection of different gemstones for a personal touch. What makes this piece truly exceptional is the meticulous craftsmanship that goes into each unique bear, complete with the enchanting Black Onyx gemstone eyes and nose, as well as a heart-shaped colored stone nestled at its core. This pendant is a captivating and elegant accessory, offering not just a special touch, but a beautiful reflection of your style and individuality. Embrace the extraordinary with this bear pendant, where every detail tells a story of artistry and beauty.",
                 "prices": 435,
-                "img": "/img/pendant/bearblue1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/bearblue1.jpeg",
+                "images": ["./img/pendant/bearblue2.jpeg", "./img/pendant/bearblue3.jpeg", "./img/pendant/bearblue4.jpeg"]
             },
             {
                 "id": 2,
                 "name": "14k Gold Beltran Jewelry Emerald Bear Pendant",
                 "description": "Indulge in the allure of our 14k Yellow Gold Beltran Jewelry Emerald Bear Pendant, a one-of-a-kind masterpiece fully covered with Cubic Zirconia Diamonds. What makes this piece truly exceptional is the meticulous craftsmanship that goes into each unique bear, complete with the enchanting Black Onyx gemstone eyes and nose, as well as a heart-shaped emerald stone nestled at its core. This pendant is a captivating and elegant accessory. Embrace the extraordinary with this bear pendant, where every detail tells a story of artistry and beauty.",
                 "prices": 435,
-                "img": "/img/pendant/bearGreen1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/bearGreen1.jpeg",
+                "images": ["./img/pendant/bearGreen2.jpeg", "./img/pendant/bearGreen3.jpeg", "./img/pendant/bearGreen4.jpeg"]
             },
             {
                 "id": 3,
                 "name": "14k Gold Beltran Jewelry Bear Pendant",
                 "description": "Indulge in the allure of our 14k Yellow Gold Beltran Jewelry Bear Pendant, a one-of-a-kind masterpiece fully covered with Cubic Zirconia Diamonds. What makes this piece truly exceptional is the meticulous craftsmanship that goes into this bear, complete with the enchanting Black Onyx gemstone eyes and nose. This pendant is a captivating and elegant accessory. Embrace the extraordinary with this bear pendant.",
                 "prices": 435,
-                "img": "/img/pendant/bear1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/bear1.jpeg",
+                "images": ["./img/pendant/bear2.jpeg", "./img/pendant/bear3.jpeg", "./img/pendant/bear4.jpeg"]
             },
 
 
@@ -139,81 +133,81 @@
                 "name": "14k Gold Blue Jade Buddha Pendant",
                 "description": "Elevate your look with a symbol of tranquility, and let this pendant be a beautiful reflection of your style and inner peace. Embrace serenity with this Buddha pendant.",
                 "prices": 555,
-                "img": "/img/pendant/bluefat1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/bluefat1.jpeg",
+                "images": ["./img/pendant/bluefat2.jpeg", "./img/pendant/bluefat3.jpeg", "./img/pendant/bluefat4.jpeg"]
             },
             {
                 "id": 9,
                 "name": "14k Gold Colombia Pendant X2",
                 "description": "Showcase your love for Colombia with our exquisite 14k Yellow Gold Colombia Pendant, a captivating Cubic Zirconia Diamond-encrusted circle that surrounds a beautifully detailed map of Colombia that pays homage to the culture and heritage of Colombia. This pendant allows you to carry a piece of Colombia's rich culture and natural beauty with you, wherever you go.",
                 "prices": 165,
-                "img": "/img/pendant/colombia1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/colombia1.jpeg",
+                "images": ["./img/pendant/colombia2.jpeg", "./img/pendant/colombia3.jpeg", "./img/pendant/colombia4.jpeg"]
             },
             {
                 "id": 10,
                 "name": "Classic 14k Gold 8-inch Cuban Bracelet",
                 "description": "Adorn your wrist with our Classic 14k Yellow Gold 8-inch Cuban Bracelet. This versatile piece is perfect for daily wear, adding a touch of elegance to any outfit and making it an essential part of your daily wardrobe. Elevate your look with this exquisite Cuban bracelet.",
                 "prices": 2615,
-                "img": "/img/pendant/pr1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/pr1.jpeg",
+                "images": ["./img/pendant/pr2.jpeg", "./img/pendant/pr3.jpeg", "./img/pendant/pr4.jpeg"]
             },
             {
                 "id": 11,
                 "name": "14k Gold 'Dominican King' Pendant",
                 "description": "Embrace the cultural richness of the Dominican Republic with our 14k Yellow Gold 'Dominican King' Pendant, adorned with beautiful Cubic Zirconia Diamonds. This pendant not only honors the vibrant culture and history of the Dominican Republic but also allows you to take immense pride in yourself as a 'Dominicano' and boldly proclaim, 'Yo soy dominicano!' This pendant is a symbol of the nation's cultural wealth and a reflection of your Dominican identity as a true Dominican King. Elevate your style and showcase your heritage with this extraordinary pendant.",
                 "prices": 225,
-                "img": "/img/pendant/dominicanK1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/dominicanK1.jpeg",
+                "images": ["./img/pendant/dominicanK2.jpeg", "./img/pendant/dominicanK3.jpeg", "./img/pendant/dominicanK4.jpeg"]
             },
             {
                 "id": 12,
                 "name": "14k Gold 'Dominican Queen' Pendant",
                 "description": "Embrace the cultural richness of the Dominican Republic with our 14k Yellow Gold 'Dominican Queen' Pendant, adorned with beautiful Cubic Zirconia Diamonds. This pendant not only honors the vibrant culture and history of the Dominican Republic but also allows you to take immense pride in yourself as a 'Dominicana' and boldly proclaim, 'Yo soy dominicana!' This pendant is a symbol of the nation's cultural wealth and a reflection of your Dominican identity as a true Dominican Queen. Elevate your style and showcase your heritage with this extraordinary pendant.",
                 "prices": 250,
-                "img": "/img/pendant/dominicanQ1.jpeg",
+                "img": "./img/pendant/dominicanQ1.jpeg",
 
-                "images": ["", "", ""]
+                "images": ["./img/pendant/dominicanQ2.jpeg", "./img/pendant/dominicanQ3.jpeg", "./img/pendant/dominicanQ4.jpeg"]
             },
             {
                 "id": 13,
                 "name": "14k Gold Dominican Republic Pendant",
                 "description": "Embrace the cultural richness of the Dominican Republic with our 14k Yellow Gold Dominican Republic Pendant, adorned with beautiful Cubic Zirconia Diamonds. This pendant not only honors the vibrant culture and history of the Dominican Republic but also allows you to take immense pride in yourself as a 'Dominicano' and boldly proclaim, 'Yo soy dominicano!' This pendant is a symbol of the nation's cultural wealth and a reflection of your Dominican identity. Elevate your style and showcase your heritage with this extraordinary pendant.",
                 "prices": 250,
-                "img": "/img/pendant/dominicanrepublic1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/dominicanrepublic1.jpeg",
+                "images": ["./img/pendant/dominicanrepublic2.jpeg", "./img/pendant/dominicanrepublic5.jpeg", "./img/pendant/dominicanrepublic7.jpeg"]
             },
             {
                 "id": 14,
                 "name": "14k Gold Dominican Republic Pendant",
                 "description": "Showcase your love for the Dominican Republic with our exquisite 14k Yellow Gold Dominican Republic Pendant, a captivating piece adorned with the brilliance of Cubic Zirconia Diamonds that pays homage to the culture and heritage of Dominican Republic. This pendant allows you to carry a piece of the Dominican Republic's vibrant culture with you, wherever you go.",
                 "prices": 160,
-                "img": "/img/pendant/dominicanrepublic1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/dominicanrepublic1.jpeg",
+                "images": ["./img/pendant/dominicanrepublic2.jpeg", "./img/pendant/dominicanrepublic3.jpeg", "./img/pendant/dominicanrepublic4.jpeg"]
             },
             {
                 "id": 15,
                 "name": "14k Gold Panther Head Pendant",
                 "description": "Unleash the ferocity of our 14k Yellow Gold Panther Head Pendant, embellished with Cubic Zirconia Diamonds, a fierce and captivating piece that exudes power and strength.",
                 "prices": 425,
-                "img": "/img/pendant/pumahead1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/pumahead1.jpeg",
+                "images": ["./img/pendant/pumahead2.jpeg", "./img/pendant/pumahead3.jpeg", "./img/pendant/pumahead4.jpeg"]
             },
             {
                 "id": 16,
                 "name": "14k Gold Illuminati Pyramid Pendant",
                 "description": "Uncover the mystique of our beautiful 14k Yellow Gold Illuminati Pyramid Pendant, adorned with black & white Cubic Zirconia Diamonds, a mesmerizing piece that exudes intrigue and style.",
                 "prices": 510,
-                "img": "/img/pendant/soldier1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/soldier1.jpeg",
+                "images": ["./img/pendant/soldier2.jpeg", "./img/pendant/soldier3.jpeg", "./img/pendant/soldier4.jpeg"]
             },
             {
                 "id": 17,
                 "name": "14k Gold Jesus Head Pendant",
                 "description": "Embrace the divine with our 14k Yellow Gold Jesus Head Pendant, embellished with the radiance of Cubic Zirconia Diamonds. A sacred and elegant piece that radiates spirituality and style.",
                 "prices": 1250,
-                "img": "/img/pendant/jesus2.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/jesus2.jpeg",
+                "images": ["./img/pendant/jesus1.jpeg", "./img/pendant/jesus3.jpeg", "./img/pendant/jesus4.jpeg"]
             },
 
             {
@@ -221,7 +215,7 @@
                 "name": "14k Gold Iced-Out 'F' Pendant",
                 "description": "Wear your initial with our 14k Yellow Gold Iced-Out 'F' Pendant, adorned with dazzling Cubic Zirconia Diamonds. This pendant showcasing the letter 'F' with a majestic crown exudes glamour and style designed to complement your unique fashion.",
                 "prices": 245,
-                "img": "/img/pendant/f1.JPG",
+                "img": "./img/pendant/f1.JPG",
                 "images": ["", "", ""]
             },
             {
@@ -229,32 +223,32 @@
                 "name": "14k Gold Mexico Pendant X2",
                 "description": "Showcase your love for Mexico with our exquisite 14k Yellow Gold Mexico Pendant, a captivating Cubic Zirconia Diamond-encrusted circle that surrounds a beautifully detailed map of Mexico. This pendant not only pays tribute to the nation's rich culture and heritage but also allows you to carry a piece of Mexico's vibrant traditions with you, wherever you go.",
                 "prices": 240,
-                "img": "/img/pendant/mexico7.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/mexico7.jpeg",
+                "images": ["./img/pendant/mexico10.jpeg", "./img/pendant/mexico8.jpeg", "./img/pendant/mexico9.jpeg"]
             },
             {
                 "id": 21,
                 "name": "14k Gold Iced-Out Mexico Pendant",
                 "description": "Adorn yourself with the brilliance of our 14k Yellow Gold Iced-Out Mexico Pendant, fully covered with Cubic Zirconia Diamonds. This pendant beautifully captures the culture and heritage of Mexico. It's not just a piece of jewelry; it's a statement of love for Mexico.",
                 "prices": 440,
-                "img": "/img/pendant/mexico1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/mexico1.jpeg",
+                "images": ["./img/pendant/mexico2.jpeg", "./img/pendant/mexico3.jpeg", "./img/pendant/mexico4.jpeg"]
             },
             {
                 "id": 22,
                 "name": "14k Gold Classic Cross Pendant",
                 "description": "Embrace the divine with our 14k Yellow Gold Classic Cross Pendant, a timeless and elegant piece that exudes spirituality and style. This pendant serves as a beautiful reflection of your faith and devotion.",
                 "prices": 450,
-                "img": "/img/pendant/boy1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/pendant/boy1.jpeg",
+                "images": ["./img/pendant/boy2.jpeg", "./img/pendant/boy3.jpeg", "./img/pendant/boy4.jpeg"]
             },
             {
                 "id": 23,
                 "name": "14k Gold Classic Jesus Pendant",
                 "description": "Embrace the divine with our 14k Yellow Gold Classic Jesus Pendant, adorned with the radiance of Cubic Zirconia Diamonds. A sacred and elegant piece that radiates spirituality and style.",
                 "prices": 510,
-                "img": "/img/pendant/men1.JPG",
-                "images": ["/img/pendant/men2.jpeg", "/img/pendant/men3.jpeg", "/img/pendant/men4.jpeg"]
+                "img": "./img/pendant/men1.JPG",
+                "images": ["./img/pendant/men2.jpeg", "./img/pendant/men3.jpeg", "./img/pendant/men4.jpeg"]
             },
 
             {
@@ -262,8 +256,8 @@
                 "name": "14k Gold Quinceañera Bracelet",
                 "description": "Add a touch of elegance to your celebration with our 14k Yellow Gold Quinceañera Bracelet, a timeless piece designed to commemorate this special milestone in a young woman's life. This bracelet is a symbol of grace and tradition, making it the perfect accessory for a Quinceañera celebration. Make this moment even more memorable with this exquisite Quinceañera bracelet.",
                 "prices": 185,
-                "img": "/img/pendant/quinse1.jpeg",
-                "images": ["/img/pendant/quinse2.jpeg", "/img/pendant/quinse3.jpeg", "/img/pendant/quinse4.jpeg"]
+                "img": "./img/pendant/quinse1.jpeg",
+                "images": ["./img/pendant/quinse2.jpeg", "./img/pendant/quinse3.jpeg", "./img/pendant/quinse4.jpeg"]
             }
         ],
 
@@ -272,8 +266,8 @@
                 "name": "14k Gold Multi Golds Necklace & Bracelet Heart Set",
                 "description": "Embrace the beauty of love with our 14k Multi-Stone Gold Necklace and Bracelet Heart Set. This set features multiple hearts meticulously crafted in white, yellow, and rose gold, adorned with a dazzling array of Cubic Zirconia diamonds. This set is a symbol of the diverse facets of love and connection, offering a versatile and stunning addition to your jewelry collection.",
                 "prices": 2000,
-                "img": "/img/set/IMG_4615.jpeg",
-                "images": ["/img/rings/heartRing1.jpeg", "/img/rings/heartRing2.jpeg", "/img/rings/heartRing4.jpeg"]
+                "img": "./img/set/IMG_4615.jpeg",
+                "images": ["./img/rings/heartRing1.jpeg", "./img/rings/heartRing2.jpeg", "./img/rings/heartRing4.jpeg"]
             }
 
 
@@ -283,16 +277,16 @@
                 "name": "14k Gold Iced-Out Heart Ring",
                 "description": "Fall in love with our captivating 14k Yellow Gold Iced-Out Heart Ring, fully covered with dazzling Cubic Zirconia Diamonds and Baguette Cut Stones. This stunning ring, designed to fit a size 7.5 finger, is a symbol of the deep and enduring love that fills your heart.",
                 "prices": 490,
-                "img": "/img/rings/heartRing3.jpeg",
-                "images": ["/img/rings/heartRing1.jpeg", "/img/rings/heartRing2.jpeg", "/img/rings/heartRing4.jpeg"]
+                "img": "./img/rings/heartRing3.jpeg",
+                "images": ["./img/rings/heartRing1.jpeg", "./img/rings/heartRing2.jpeg", "./img/rings/heartRing4.jpeg"]
             },
             {
                 "id": 6,
                 "name": "14k Gold Iced-Out 'R' RING",
                 "description": "Wear your initial with a touch of glamour with our 14k Yellow Gold Iced-Out 'R' Ring, fully adorned with dazzling Cubic Zirconia Diamonds. This ring exudes glamour and style designed to complement your unique fashion.",
                 "prices": 380,
-                "img": "/img/rings/bearring1.jpeg",
-                "images": ["/img/rings/bearring2.jpeg", "/img/rings/bearring3.jpeg", "/img/rings/bearring4.jpeg"]
+                "img": "./img/rings/bearring1.jpeg",
+                "images": ["./img/rings/bearring2.jpeg", "./img/rings/bearring3.jpeg", "./img/rings/bearring4.jpeg"]
             }
 
 
@@ -302,8 +296,8 @@
                 "name": "14k Gold Multi Golds Flower Bracelet",
                 "description": "Adorn your wrist with our 14k Gold Multi-Stone Flower Bracelet, a delightful piece that flourishes with elegance and charm. This bracelet boasts multiple beautifully crafted flowers in white, yellow, and rose gold, creating a harmonious blend of colors. It serves as a tribute to the natural world's beauty and your personal style.",
                 "prices": 1025,
-                "img": "/img/bracelet/flowbracelet1.jpeg",
-                "images": ["/img/bracelet/flowbracelet2.jpeg", "/img/bracelet/flowbracelet3.jpeg", "/img/bracelet/flowbracelet4.jpeg"]
+                "img": "./img/bracelet/flowbracelet1.jpeg",
+                "images": ["img/bracelet/flowbracelet2.jpeg", "img/bracelet/flowbracelet3.jpeg", "img/bracelet/flowbracelet4.jpeg"]
             },
 
             {
@@ -311,7 +305,7 @@
                 "name": "Classic 14k Gold 8-inch Cuban Bracelet",
                 "description": "Adorn your wrist with our Classic 14k Yellow Gold 8-inch Cuban Bracelet. This versatile piece is perfect for daily wear, adding a touch of elegance to any outfit and making it an essential part of your daily wardrobe. Elevate your look with this exquisite Cuban bracelet.",
                 "prices": 2615,
-                "img": "/img/bracelet/14kbracelet1.JPG",
+                "img": "./img/bracelet/14kbracelet1.JPG",
                 "images": ["/img/bracelet/14kbracelet2.JPG", "/img/bracelet/14kbracelet3.jpeg", "/img/bracelet/14kbracelet5.jpeg"]
             }
         ],
@@ -320,24 +314,24 @@
                 "name": "14k Gold Itallo 20in Link Chain ",
                 "description": "This chain is the ultimate accent to your attire ensuring you stand out in any setting. Our 14k Yellow Gold Link Chain featuring a captivating twisted-like texture is the perfect addition to your collection.",
                 "prices": 2560,
-                "img": "/img/chain/chaingrand1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/chain/chaingrand1.jpeg",
+                "images": ["./img/chain/chaingrand3.jpeg", "./img/chain/chaingrand2.jpeg", "./img/chain/chaingrand4.jpeg"]
             },
             {
                 "id": 37,
                 "name": "14k Gold Minion Character Chain",
                 "description": "Unveil your inner child with our 14k Yellow Gold Minion Character Chain adorned with Colored Cubic Zirconia Stones. This Minion Character Chain is a fun and fashionable piece that brings a smile to any occasion. Whether you’re a fan of these lovable characters or simply want to add a pop of color to your jewelry collection, this chain is a delightful choice that embodies charm and character.",
                 "prices": 2210,
-                "img": "/img/chain/minium1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/chain/minium1.jpeg",
+                "images": ["./img/chain/minium2.JPG", "./img/chain/minium6.JPG", "./img/chain/minium4.jpeg"]
             },
             {
                 "id": 38,
                 "name": "14k Gold 15-inch Unique Texture Link Chain",
                 "description": "Unveil your inner child with our 14k Yellow Gold Minion Character Chain adorned with Colored Cubic Zirconia Stones. This Minion Character Chain is a fun and fashionable piece that brings a smile to any occasion. Whether you’re a fan of these lovable characters or simply want to add a pop of color to your jewelry collection, this chain is a delightful choice that embodies charm and character.",
                 "prices": 2210,
-                "img": "/img/chain/chain14k1.jpeg",
-                "images": ["", "", ""]
+                "img": "./img/chain/chain14k1.jpeg",
+                "images": ["./img/chain/chain14k2.jpeg", "./img/chain/chain14k3.jpeg", "./img/chain/chain14k5.jpeg"]
             }
         ]
     },

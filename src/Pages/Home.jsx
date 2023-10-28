@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useTranslation } from 'react-i18next';
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -14,6 +16,9 @@ import { CollectionCarousel } from '../components/CollectionCarousel';
 import Testimonial from '../components/Testimonial';
 
 const Home = () => {
+
+  const { t } = useTranslation(); // Obtiene la función de traducción
+
   return (
 
     <>
@@ -50,10 +55,12 @@ const Home = () => {
     
       <div className="absolute z-30   flex justify-center items-center bg-opacity-25 bg-black w-screen	 h-5/6	  md:w-3/4 md:h-5/6 ">
     <div className="h-full text-white text-center flex justify-center items-center gap-4 flex-col ">
-      <h1 className="text-4xl md:text-6xl font-bold mb-4">Explora la Elegancia Única</h1>
-      <p className="text-lg md:text-xl">Colección Exclusiva de Joyería de Diamantes</p>
-      <p className="text-lg md:text-xl">Para Parejas y Amantes del Lujo.</p>
-      <button className="bg-white w-40 text-black font-bold py-2 px-4 mt-4">Descubre Más</button>
+    <h1 className="text-4xl md:text-6xl font-bold mb-4">{t('exploreElegance')}</h1>
+            <p className="text-lg md:text-xl">{t('exclusiveJewelryCollection')}</p>
+            <p className="text-lg md:text-xl">{t('forCouplesAndLuxuryLovers')}</p>
+            <button className="bg-white w-40 text-black font-bold py-2 px-4 mt-4">
+              {t('discoverMore')}
+            </button>
     </div>
   </div>
 
@@ -66,10 +73,10 @@ const Home = () => {
 
 <div className="w-full flex justify-between mb-5 md:w-3/4">
 
-<span className="text-lg text-black"> SIGNATURE RINGS</span>
-
-
-<a  className="text-lg" href="">View All</a>
+<span className="text-lg text-black">{t('signatureRings')}</span>
+              <a className="text-lg" href="#">
+                {t('viewAll')}
+              </a>
 
 </div>
 
@@ -88,17 +95,15 @@ const Home = () => {
 </section>
 
 
-
 <section className="w-full h-72 flex flex-col items-center md:h-96">
-
-<div className="aboutImg w-full h-full md:w-3/4">
-  <h3 className="text-2xl text-amber-500 font-bold">Discover Luxury Jewelry</h3>
-  <p className="text-xl text-zinc-300 w-full text-center">Elevate Your Everyday Style with Our Exquisite Vintage Pieces</p>
-  <button className="p-2 bg-yellow-600 w-28 rounded-lg text-white font-semibold hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">Explore</button>
-</div>
-
-</section>
-
+          <div className="aboutImg w-full h-full md:w-3/4">
+            <h3 className="text-2xl text-amber-500 font-bold">{t('discoverLuxuryJewelry')}</h3>
+            <p className="text-xl text-zinc-300 w-full text-center">{t('elevateYourStyle')}</p>
+            <button className="p-2 bg-yellow-600 w-28 rounded-lg text-white font-semibold hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
+              {t('explore')}
+            </button>
+          </div>
+        </section>
 
 
 
@@ -159,20 +164,17 @@ const Home = () => {
 
 </div>
 
-
-<div className="w-full h-2/4 flex flex-col items-center justify-center gap-3 md:items-start justify-center h-3/4 gap-5">
-
-<h5 className="w-full text-3xl text-yellow-600">TRENDING IN SS '21</h5>
-
-<p className="w-60 text-lg">Gold croissan Hoops to elevate your Summer Looks</p>
-
-
-<button className="bg-yellow-500 p-2 ml-10">Shop now</button>
-
-
-
-</div>
-
+<div className="w-full h-auto md:flex flex-col items-center justify-center gap-3 md:items-start justify-center h-auto gap-5">
+      <h5 className="text-3xl text-yellow-600 text-center md:text-left">
+        {t('trendingTitle')}
+      </h5>
+      <p className="text-lg text-center md:text-left">
+        {t('trendingDescription')}
+      </p>
+      <button className="bg-yellow-500 p-2 mx-auto md:ml-0">
+        {t('shopNowTrend')}
+      </button>
+    </div>
 </section>
 
 

@@ -123,7 +123,6 @@ const { t } = useTranslation();
 
   const buttonImage = currentLanguage === 'es' ? buttonImageSpanish  : buttonImageEnglish;
 
-  const buttonText = currentLanguage === 'es' ? "EN: "  : "ES: ";
 
 
 
@@ -220,7 +219,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
 
 <button className="w-16  p-2 h-full flex items-center justify-center hover:bg-slate-100" onClick={currentLanguage === 'es' ? changeToEnglish : changeToSpanish}>
-      <h2 className="text-slate-700 flex justify-center items-center gap-3 overflow-hidden h-30">{buttonText} <div className="w-8 h-8"><img src={buttonImage} className="w-full h-full object-contain" alt="flags"/> </div>
+      <h2 className="text-slate-700 flex justify-center items-center gap-3 overflow-hidden h-30"><div className="w-8 h-8"><img src={buttonImage} className="w-full h-full object-contain" alt="flags"/> </div>
       </h2>
     </button>
 
@@ -232,8 +231,6 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
 
 <div  className=" flex flex-col pt-10  w-full h-full bg-amber-100  gap-3  " data-mdb-zoom-effect="true">
-<h1 className=" text-center  w-full p-3 text-black">Tu Carrito</h1>
-
 
 <Cart cartItems={cartItems} removeFromCart={removeFromCart} clearCart={clearCart}/> {/* Pass the cart items as a prop */}
 
@@ -264,7 +261,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
   </div>
 
   <ul className="w-3/4 flex text-lg text-gray-700 justify-end gap-10 uppercase items-center z-20	">
-    <li className="p-2 hover:bg-slate-100"> <Link exact="true" to="/BeltranCo/" >  {t('home')}</Link></li>
+    <li className="p-2 hover:bg-slate-100"> <Link exact="true" to="/BeltranCo/" className="w-full h-full"  >  {t('home')}</Link></li>
     <li className="p-2 hover:bg-slate-100"> <Link to="/BeltranCo/about" >
         {t('about')}</Link></li>
 
@@ -275,7 +272,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
     >
       <select className="dropdown-button bg-transparent" ><option value="product">PRODUCT</option></select>
       {isMenuOpen && (
-        <div className="dropdown-menu relative bg-slate-100 top-5 w-30">
+        <div className="dropdown-menu relative bg-slate-100 top-20 w-30">
       <li className="w-24 hover:bg-slate-300"> <Link to="/BeltranCo/ring" >  {t('rings')}</Link></li>
     <li className="hover:bg-slate-300"> <Link to="/BeltranCo/pendant" >  {t('pendant')}</Link></li>
     <li className="hover:bg-slate-300"> <Link to="/BeltranCo/chain" >  {t('chain')}</Link></li>
@@ -314,7 +311,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
 
 <button className="w-16  p-2 h-full flex items-center justify-center hover:bg-slate-100" onClick={currentLanguage === 'es' ? changeToEnglish : changeToSpanish}>
-      <h2 className="text-slate-700 flex justify-center items-center gap-3 overflow-hidden h-30">{buttonText} <div className="w-8 h-8"><img src={buttonImage} className="w-full h-full object-contain" alt="flags"/> </div>
+      <h2 className="text-slate-700 flex justify-center items-center gap-3 overflow-hidden h-30"> <div className="w-8 h-8"><img src={buttonImage} className="w-full h-full object-contain" alt="flags"/> </div>
       </h2>
     </button>
 

@@ -156,7 +156,7 @@ function ProductDetail({ jewerlrys, route, addToCart }) {
         <div className="w-full md:w-1/2">
           <img
             className="w-full h-auto md:h-96 object-cover"
-            src={product.img}
+            src={'../' + product.img}
             alt={product.name}
           />
         </div>
@@ -167,7 +167,7 @@ function ProductDetail({ jewerlrys, route, addToCart }) {
             {product.images.map((image, index) => (
               <img
                 key={index}
-                src={image}
+                src={'../' + image}
                 alt={`Imagen ${index}`}
                 className="w-full h-auto md:w-32 md:h-40 object-cover"
               />
@@ -231,7 +231,7 @@ function ProductDetail({ jewerlrys, route, addToCart }) {
               >
                 <img
                   className="w-full h-full object-cover"
-                  src={jewerlry.img}
+                  src={'../' + jewerlry.img}
                   alt=""
                 />
               </Link>
