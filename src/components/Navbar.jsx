@@ -59,7 +59,7 @@ const Navbar = ({cartItems, clearCart, removeFromCart, itemsAdded}) => {
 
   const [toggleOn, settoggleOn] = useState(true)
 
-    const [currentLanguage, setCurrentLanguage] = useState('es');
+    const [currentLanguage, setCurrentLanguage] = useState('en');
 
   
 
@@ -121,7 +121,7 @@ const { t } = useTranslation();
   
 
 
-  const buttonImage = currentLanguage === 'es' ? buttonImageSpanish  : buttonImageEnglish;
+  const buttonImage = currentLanguage === 'en' ? buttonImageEnglish  :  buttonImageSpanish;
 
 
 
@@ -259,7 +259,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
   <div className="w-16 h-16 rounded-lg	 overflow-hidden">
 
 
-    <img className="w-full h-full object-cover" src="./bc.jpg" alt="" />
+    <img className="w-full h-full object-cover" src="../bc.jpg" alt="" />
   </div>
 
   <ul className="w-3/4 flex text-lg text-gray-700 justify-end gap-10 uppercase items-center z-20	">
@@ -279,20 +279,21 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
   {isMenuOpen && (
     <div className="dropdown-menu absolute bg-yellow-50 top-5 right-0 w-36 py-2 mt-2 shadow-md border border-gray-300 rounded-md">
       <ul className="divide-y divide-gray-300">
-      <li className="hover:bg-yellow-50 p-2">
-          <Link to="/beltrangold/jewelrys">{t('TODO')}</Link>
-        </li>
-        <li className="hover:bg-yellow-50 p-2">
+
+        <li className="hover:bg-yellow-200 p-2">
           <Link to="/beltrangold/ring">{t('rings')}</Link>
         </li>
-        <li className="hover:bg-yellow-50 p-2">
+        <li className="hover:bg-yellow-200 p-2">
           <Link to="/beltrangold/pendant">{t('pendant')}</Link>
         </li>
-        <li className="hover:bg-yellow-50 p-2">
+        <li className="hover:bg-yellow-200 p-2">
           <Link to="/beltrangold/chain">{t('chain')}</Link>
         </li>
-        <li className="hover:bg-yellow-50 p-2">
+        <li className="hover:bg-yellow-200 p-2">
           <Link to="/beltrangold/bracelet">{t('bracelet')}</Link>
+        </li>
+        <li className="hover:bg-yellow-200 p-2">
+          <Link to="/beltrangold/jewelrys">{t('TODO')}</Link>
         </li>
       </ul>
     </div>

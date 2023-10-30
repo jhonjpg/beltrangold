@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
 
 
 // Import Swiper styles
@@ -15,7 +17,7 @@ import { Carousel } from '../components/Carousel';
 import { CollectionCarousel } from '../components/CollectionCarousel';
 import Testimonial from '../components/Testimonial';
 
-const Home = () => {
+const Home = (jewerlrys) => {
 
   const { t } = useTranslation(); // Obtiene la función de traducción
   const scrollTargetRef = useRef(null);
@@ -98,16 +100,15 @@ const Home = () => {
 
 <div className="w-full flex justify-between mb-5 md:w-3/4">
 
-<span className="text-lg text-black">{t('jewelrycollection')}</span>
-              <a className="text-lg" href="#">
-                {t('viewAll')}
-              </a>
+<span className="text-lg text-black ">{t('jewelrycollection')}</span>
+                     <Link  to="/beltrangold/jewelrys" className="hover:text-slate-100" >  {t('viewAll')}      </Link>   
+
 
 </div>
 
 <div className="w-full overflow-hidden md:w-9/12	 ">
 
-<Carousel/>
+<Carousel jewerlrys={jewerlrys}/>
 
 </div>
 
@@ -120,14 +121,19 @@ const Home = () => {
 </section>
 
 
+
 <section className="w-full h-72 flex flex-col items-center md:h-96">
           <div className="aboutImg w-full h-full md:w-3/4">
+          <div className="bg-black/25 w-full h-full md:full flex flex-col justify-center items-center gap-5 ">
+
             <h3 className="text-2xl text-amber-500 font-bold">{t('discoverMore')}</h3>
             <p className="text-xl text-zinc-300 w-full text-center">{t('elevateYourStyle')}</p>
             <button className="p-2 bg-yellow-600 w-28 rounded-lg text-white font-semibold hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
-              {t('explore')}
+            <Link  to="/beltrangold/pendant" > {t('explore')}</Link>   
             </button>
           </div>
+          </div>
+
         </section>
 
 
@@ -213,7 +219,8 @@ const Home = () => {
           {t('Sectiondescription')}
         </p>
         <button className="p-3 bg-yellow-600 w-40 rounded-full text-white font-semibold hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
-          {t('Sectionbutton')}
+         <Link  to="/beltrangold/jewelrys" > {t('Sectionbutton')}    </Link>   
+
         </button>
       </div>
     </section>

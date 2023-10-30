@@ -8,13 +8,12 @@
     "chain": "Cadena",
     "bracelet": "Pulsera",
     "contact": "Contacto",
-    "desarrolladorWeb": "DESARROLLADOR WEB",
-    "jpDesigner": "JP DESIGNER",
     "descripcion": "Encargado de crear y mantener sitios web con habilidades en programación y diseño, así como un conocimiento profundo de lenguajes y tecnologías relacionadas con el desarrollo web",
     "iniciar": "INICIAR",
     "exploreElegance": "Explora la Elegancia Única",
     "exclusiveJewelryCollection": "Colección Exclusiva de Joyería de Diamantes",
     "forCouplesAndLuxuryLovers": "Para Parejas y Amantes del Lujo",
+    "discoverMore": "Descubre Mas",
     "jewelrycollection": "Colección de Joyas",
     "viewAll": "Ver Todo",
     "discoverLuxuryJewelry": "Descubre Joyería de Lujo",
@@ -158,8 +157,6 @@
             {
                 "id": 10,
                 "category": "pendant",
-
-                "category": "pendant",
                 "name": "Pulsera Cubana Clásica de Oro de 14k de 8 pulgadas",
                 "description": "Adorna tu muñeca con nuestra Pulsera Cubana Clásica de Oro Amarillo de 14k de 8 pulgadas. Esta pieza versátil es perfecta para el uso diario, añadiendo un toque de elegancia a cualquier conjunto y convirtiéndose en una parte esencial de tu vestuario diario. Eleva tu aspecto con esta exquisita pulsera cubana.",
                 "prices": 2615,
@@ -285,15 +282,19 @@
             }
         ],
 
-        "set": [{
-            "id": 24,
-            "category": "set",
-            "name": "Conjunto Collar y Pulsera Corazón de Oro de 14k con Múltiples Piedras",
-            "description": "Abraza la belleza del amor con nuestro Conjunto Collar y Pulsera Corazón de Oro de 14k con Múltiples Piedras. Este conjunto presenta múltiples corazones meticulosamente elaborados en oro blanco, amarillo y rosa, adornados con una deslumbrante variedad de diamantes de circón cúbico. Este conjunto es un símbolo de las diversas facetas del amor y la conexión, ofreciendo una adición versátil y deslumbrante a tu colección de joyas.",
-            "prices": 2000,
-            "img": "./img/set/IMG_4615.jpeg",
-            "images": ["./img/rings/heartRing1.jpeg", "./img/rings/heartRing2.jpeg", "./img/rings/heartRing4.jpeg"]
-        }],
+        "set": [
+
+            {
+                "id": 24,
+                "category": "set",
+                "name": "Conjunto Collar y Pulsera Corazón de Oro de 14k con Múltiples Piedras",
+                "description": "Abraza la belleza del amor con nuestro Conjunto Collar y Pulsera Corazón de Oro de 14k con Múltiples Piedras. Este conjunto presenta múltiples corazones meticulosamente elaborados en oro blanco, amarillo y rosa, adornados con una deslumbrante variedad de diamantes de circón cúbico. Este conjunto es un símbolo de las diversas facetas del amor y la conexión, ofreciendo una adición versátil y deslumbrante a tu colección de joyas.",
+                "prices": 2000,
+                "img": "./img/set/IMG_4615.jpeg",
+                "images": ["./img/rings/heartRing1.jpeg", "./img/rings/heartRing2.jpeg", "./img/rings/heartRing4.jpeg"]
+            }
+
+        ],
         "ring": [{
                 "id": 28,
                 "category": "ring",
@@ -358,6 +359,16 @@
                 "prices": 2210,
                 "img": "./img/chain/chain14k1.jpeg",
                 "images": ["./img/chain/chain14k2.jpeg", "./img/chain/chain14k3.jpeg", "./img/chain/chain14k5.jpeg"]
+            },
+
+            {
+                "id": 24,
+                "category": "chain",
+                "name": "Conjunto Collar y Pulsera Corazón de Oro de 14k con Múltiples Piedras",
+                "description": "Abraza la belleza del amor con nuestro Conjunto Collar y Pulsera Corazón de Oro de 14k con Múltiples Piedras. Este conjunto presenta múltiples corazones meticulosamente elaborados en oro blanco, amarillo y rosa, adornados con una deslumbrante variedad de diamantes de circón cúbico. Este conjunto es un símbolo de las diversas facetas del amor y la conexión, ofreciendo una adición versátil y deslumbrante a tu colección de joyas.",
+                "prices": 2000,
+                "img": "./img/set/IMG_4615.jpeg",
+                "images": ["./img/set/IMG_4617.jpeg", "./img/set/IMG_4619.jpeg", "./img/set/IMG_4616.jpeg"]
             }
         ]
     },
@@ -391,5 +402,18 @@
             "name": "Patricia Gomez",
             "testimonial": "No puedo decir lo suficiente sobre BeltranJewrl. Cada vez que llevo una de sus piezas, siento que llevo una obra de arte y elegancia conmigo. ¡Son simplemente magníficos!"
         }
-    ]
+    ],
+
+    "similarProductsTitle": "Productos Similares",
+    "buy": "Comprar",
+    "Bracelet Banner": "Banner de Pulseras",
+    "Sort by": "Ordenar por",
+    "Feature": "Característica",
+    "Price": "Precio",
+    "Name": "Nombre",
+    "Products": "Productos",
+    "Bracelet Image": "Imagen de Pulsera"
+
+
+
 }

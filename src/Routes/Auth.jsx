@@ -19,10 +19,16 @@ import CartPaypal from '../cart/CartPaypal';
 import Chain from '../Pages/Chain';
 import Bracelet from '../Pages/Bracelet';
 import AllProducts from '../Pages/AllProducts';
+import { useTranslation } from 'react-i18next';
+
 
 
 const Auth = () => {
-  const pruduct = es
+
+  const { t } = useTranslation();
+
+  const pruduct = t('BeltranCo', { returnObjects: true });
+
 
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitial);
   const productCount = state.productCount;
@@ -74,7 +80,7 @@ const Auth = () => {
   };
 
 
-  
+  console.log
 
   return (
     <BrowserRouter>
@@ -87,15 +93,15 @@ const Auth = () => {
       />
 
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="/beltrangold/" element={<Home />} />
+        <Route index element={<Home  />} />
+        <Route path="/beltrangold/" element={<Home jewerlrys={pruduct} />} />
         <Route path="/beltrangold/about" element={<About />} />
         <Route path="/beltrangold/ring" element={<Ring />} />
         <Route
           path="/beltrangold/ring/:productName"
           element={
             <ProductDetail
-              jewerlrys={pruduct.BeltranCo.ring}
+              jewerlrys={pruduct.ring}
               route="ring"
               addToCart={addToCart}
             />
@@ -110,7 +116,7 @@ const Auth = () => {
           path="/beltrangold/pendant/:productName"
           element={
             <ProductDetail
-              jewerlrys={pruduct.BeltranCo.pendant}
+              jewerlrys={pruduct.pendant}
               route="Pendant"
               addToCart={addToCart}
             />
@@ -121,7 +127,7 @@ const Auth = () => {
           path="/beltrangold/chain/:productName"
           element={
             <ProductDetail
-              jewerlrys={pruduct.BeltranCo.chain}
+              jewerlrys={pruduct.chain}
               route="chain"
               addToCart={addToCart}
             />
@@ -134,7 +140,7 @@ const Auth = () => {
           path="/beltrangold/bracelet/:productName"
           element={
             <ProductDetail
-              jewerlrys={pruduct.BeltranCo.bracelet}
+              jewerlrys={pruduct.bracelet}
               route="bracelet"
               addToCart={addToCart}
               

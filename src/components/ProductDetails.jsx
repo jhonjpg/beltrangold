@@ -1,126 +1,4 @@
-// import { useParams } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
 
-// import React, { useReducer, useRef, useState } from 'react';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-// import { Navigation } from 'swiper/modules';
-// import Cart from '../cart/Cart';
-// import { useTranslation } from 'react-i18next';
-
-
-
-// function ProductDetail({jewerlrys, route, addToCart }) {
-
-//   const { t } = useTranslation('translation'); // Specify the namespace 'translation'
-
-
-  
-
-//   const { productName } = useParams();
-//   const product = jewerlrys.find((jewerlry) => jewerlry.name === productName);
-
- 
-//   let slidesPerView = 2;
-
-//   if (window.innerWidth >= 768) {
-//     slidesPerView = 4;
-//   }
-
-//   const [swiperRef, setSwiperRef] = useState(null);
-
-//   // Verificar si el producto existe
-//   if (!product) {
-//     return <p>Producto no encontrado</p>;
-//   }
-
-//   return (
-//     <>
-//       <div className="h-screen  oro shadow-lg flex flex-col md:flex-row max-w-screen-xl mx-auto  space-y-4 md:space-x-8 justify-center items-center">
-//         {/* Imagen del producto */}
-//         <div className="md:w-1/2 h-96">
-//           <img
-//             className="w-full h-full object-cover"
-//             src={product.img}
-//             alt={product.name}
-//           />
-//         </div>
-
-//         {/* Detalles del producto */}
-//         <div className="w-full flex items-center gap-2 md:w-1/2 flex flex-col">
-//           <h1 className="text-2xl md:text-4xl font-semibold">{product.name}</h1>
-//           <p className="text-lg text-gray-500">
-//             {product.description}
-//           </p>
-//           <p className="text-2xl text-green-600 font-semibold">
-//             Precio: {product.prices}
-//           </p>
-
-//           {/* Botón de compra */}
-//           <div className="flex w-full gap-3 justify-center ">
-//           <button
-//           type="button"
-//           onClick={() => addToCart(product)}
-//           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4 w-20"
-//         >
-//           {t('Add to Cart')} {/* Translate this button label */}
-//         </button>
-
-//             <button
-//               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4 w-24"
-//               onClick={() => alert('¡Producto comprado!')}
-//             >
-//               Comprar
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-
-//       <div className="similares  oro flex flex-col md:flex-row max-w-screen-xl mx-auto  space-y-4 md:space-x-8 justify-center items-center">
-//         <span className="text-3xl">Similares</span>
-//         <Swiper
-//           onSwiper={setSwiperRef}
-//           slidesPerView={slidesPerView}
-//           centeredSlides={false}
-//           spaceBetween={30}
-//           pagination={{
-//             type: 'fraction',
-//           }}
-//           navigation={true}
-//           modules={[Navigation]}
-//           className="mySwiper w-full h-full"
-//         >
-//           {jewerlrys.map((jewerlry) => (
-//             <SwiperSlide
-//               key={jewerlry.id}
-//               className="w-2/4 h-52 flex flex-col justify-between gap-3 p-2 mb-3 md:w-1/4 h-80"
-//             >
-//               <Link
-//                 to={`/beltrangold/${route}/${jewerlry.name}`}
-//                 className="w-full h-72 overflow-hidden"
-//               >
-//                 <img
-//                   className="w-full h-full object-cover"
-//                   src={jewerlry.img}
-//                   alt=""
-//                 />
-//               </Link>
-//               <div className="h-12 w-full flex flex-col items-start">
-//                 <span className="w-full text-black text-xl">{jewerlry.name}</span>
-//                 <p className="text-gray-500">{jewerlry.prices}</p>
-//               </div>
-//             </SwiperSlide>
-//           ))}
-//         </Swiper>
-
-
-
-//       </div>
-//     </>
-//   );
-// }
 
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -135,36 +13,16 @@ import { useTranslation } from 'react-i18next';
 function ProductDetail({ jewerlrys, route, addToCart }) {
 
 
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [lightboxImage, setLightboxImage] = useState('');
-
-  <style>
-  {`
-    .lightbox-container {
-      display: ${lightboxOpen ? 'block' : 'none'};
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: 1000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .lightbox-image {
-      max-width: 80%;
-      max-height: 80%;
-      object-fit: contain;
-    }
-  `}
-</style>
 
   const { t } = useTranslation('translation');
   const { productName } = useParams();
   const product = jewerlrys.find((jewerlry) => jewerlry.name === productName);
+
+
+
+console.log(product)
+
+
 
   let slidesPerView = 2;
 
@@ -175,13 +33,13 @@ function ProductDetail({ jewerlrys, route, addToCart }) {
   const [swiperRef, setSwiperRef] = useState(null);
 
   if (!product) {
-    return <p>Producto no encontrado</p>;
+    return <div className="w-full h-screen flex flex-wrap justify-center items-center"><p className="text-4xl w-full text-center">Producto no encontrado</p> <Link to="/beltrangold/" className="text-2xl p-3 rounded-lg block text-center">Back</Link>  </div> ;
   }
 
   return (
     <>
     <div className="min-h-screen p-4 pt-20 md:p-8 oro">
-      <div className=" shadow-lg flex flex-col md:flex-row max-w-screen-xl mx-auto space-y-4 md:space-x-8 p-4 md:p-8 justify-center items-center">
+      <div className=" shadow-lg flex flex-col md:flex-row max-w-screen-xl mx-auto space-y-4 md:space-x-8 p-4 md:p-8 justify-center items-center md:mt-20">
         {/* Product Image */}
         <div className="w-full md:w-1/2"    onClick={() => {
         setLightboxOpen(true);
@@ -211,11 +69,11 @@ function ProductDetail({ jewerlrys, route, addToCart }) {
         </div>
 
         {/* Product Details */}
-        <div className="w-full flex flex-col space-y-4 md:space-y-0 md:space-x-4">
+        <div className="w-full flex flex-col space-y-4 md:space-y-0 md:space-x-4 gap-5">
           <h1 className="text-3xl md:text-4xl font-semibold mb-2">{product.name}</h1>
           <p className="text-lg text-gray-600">{product.description}</p>
           <p className="text-2xl text-green-600 font-semibold">
-            Precio: {product.prices} USD
+          {t('Precio')}: {product.prices} USD
           </p>
           <div className="flex flex-col md:flex-row items-center gap-2">
             <button
@@ -232,10 +90,10 @@ function ProductDetail({ jewerlrys, route, addToCart }) {
   </svg>            </button>
             <button
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full md:w-28"
-              onClick={() => alert('¡Producto comprado!')}
+              onClick={() => addToCart(product)}
             >
 <Link to="/beltrangold/checkout" className="text-white p-3 rounded-lg block text-center">
-        Comprar
+{t('buy')}
       </Link>            </button>
           </div>
         </div>
@@ -253,7 +111,7 @@ function ProductDetail({ jewerlrys, route, addToCart }) {
           }}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper w-full"
+          className="mySwiper w-full h-72"
         >
           {jewerlrys.map((jewerlry) => (
             <SwiperSlide

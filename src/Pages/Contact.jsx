@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <>
       <section className="contact w-screen h-screen flex flex-col items-center justify-evenly">
-        <h2 className="text-5xl oro">CONTACT US</h2>
+        <h2 className="text-5xl oro ">CONTACT US</h2>
       </section>
 
       <section className="skin w-full flex flex-col items-center gap-1 md:flex-row">
@@ -63,24 +63,26 @@ const Contact = () => {
           </form>
         </div>
 
-        <ul className="w-full h-full flex flex-col items-center gap-5 oro p-3">
+        <ul className="w-full h-full flex flex-col items-center gap-5 oro p-2">
           <li>
             <pre className="text-gray-400 w-full text-center">OPENING HOURS</pre>
             <p className="text-xl w-full text-center">Monday-Friday</p>
-            <p>8:00 AM - 6:00 PM</p>
+            <p>8:00 AM - 7:00 PM</p>
             <p className="text-xl w-full text-center">Saturday</p>
             <p>8:00 AM - 3:00 PM</p>
           </li>
 
           <li>
             <pre className="text-gray-400 w-full text-center">ADDRESS</pre>
-            <p className="w-40">New York, Manhattan St, Sherleton Ave</p>
+            <p className="w-40">New York, Manhattan</p>
           </li>
 
           <li>
             <pre className="text-gray-400 w-full text-center">SUPPORT</pre>
-            <p className="w-40">beltjerwrl@gmail.com</p>
-            <p className="w-40">51+495-3845</p>
+            <p className="w-40"> EMAIL: beltrancoenterprise@gmail.com
+</p>
+            <p className="w-40">            TEL: 809-343-3323
+</p>
           </li>
         </ul>
       </section>

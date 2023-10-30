@@ -2,16 +2,32 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
-
-
-// Import Swiper styles
+import { useParams } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-export const Carousel = () => {
+
+
+
+export const Carousel = (jewerlrys) => {
+
+
+  const { productName } = useParams();
+  // const product = jewerlrys.find((jewerlry) => jewerlry.name === productName);
+
+// const product = jewerlrys.find((jewerlry) => {
+//   // Intenta encontrar el producto por su nombre en español
+//   if (jewerlry.name === productName) {
+//     return true;
+//   }
+
+//   // Si el producto no se encuentra por el nombre en español, intenta encontrarlo por el nombre en inglés
+//   return jewerlry.name === t(`BeltranCo.pendant.${productName}.name`);
+// });
+
+
+console.log(jewerlrys.jewerlrys.jewerlrys, "asaroso")
 
 
     let slidesPerView = 2;

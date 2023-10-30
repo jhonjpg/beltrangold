@@ -39,7 +39,7 @@ const AllProducts = () => {
     
     <input
   type="text"
-  placeholder="Buscar producto"
+  placeholder="Search Product"
   value={searchTerm}
   onChange={(e) => setSearchTerm(e.target.value)}
   className="w-full p-2 mb-4 border rounded"
@@ -53,12 +53,13 @@ const AllProducts = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
       {Object.values(allProductsData).map((product) => (
-  <div key={product.id} className="product-card">
+  <div key={product.id} className="product-card overflow-hidden">
     <Link to={`/beltrangold/${product.category}/${product.name}`} className="block aspect-w-3 aspect-h-4">
       <img
         src={product.img}
         alt={product.name}
-        className="object-cover w-full h-full rounded-t-lg"
+        className="rounded-t-lg w-full h-full object-cover transform hover:scale-125 transition-transform duration-500"
+
       />
     </Link>
     <div className="p-4 bg-white rounded-b-lg">

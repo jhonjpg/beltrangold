@@ -48,7 +48,7 @@ export const CollectionCarousel = () => {
          
           <SwiperSlide className="flex flex-col hover:text-yellow-50 gap-3" ><Link to="/beltrangold/pendant"><div className="w-full h-60 "><img className="w-full h-full object-cover" src="./img/pendant/bear1.jpeg" alt=""  /></div>  <span className="border-b-4 border-solid border-black w-16 text-xl pt-2  ">{t('pendant')}</span> </Link></SwiperSlide>
          
-          <SwiperSlide className="flex flex-col hover:text-yellow-50 gap-3" ><Link to="/beltrangold/set"><div className="w-full h-60 "><img className="w-full h-full object-cover" src="./img/set/IMG_4615.jpeg" alt=""  /><span className=" w-16 border-b-4 border-solid border-black p-1 text-xl pt-2 ">{t('JEWELRY SET')}</span></div></Link></SwiperSlide>
+          <SwiperSlide className="flex flex-col hover:text-yellow-50 gap-3" ><Link to="/beltrangold/chain"><div className="w-full h-60 "><img className="w-full h-full object-cover" src="./img/set/IMG_4615.jpeg" alt=""  /><span className=" w-16 border-b-4 border-solid border-black p-1 text-xl pt-2 ">{t('JEWELRY SET')}</span></div></Link></SwiperSlide>
           
           <SwiperSlide className="flex hover:text-yellow-50 flex-col gap-3" ><Link to="/beltrangold/bracelet"><div className="w-full h-60 "><img className="w-full h-full object-cover" src="./img/bracelet/14kbracelet1.JPG" alt=""  /><span className="w-16  border-b-4 border-solid border-black text-xl pt-2 ">{t('bracelet')}</span></div></Link></SwiperSlide>
          

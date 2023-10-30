@@ -7,13 +7,12 @@
     "chain": "Chain",
     "bracelet": "Bracelet",
     "contact": "Contact",
-    "webDeveloper": "WEB DEVELOPER",
-    "jpDesigner": "JP DESIGNER",
     "description": "Responsible for creating and maintaining websites with skills in programming and design, as well as a deep knowledge of languages and technologies related to web development.",
     "start": "Start",
     "exploreElegance": "Explore Unique Elegance",
     "exclusiveJewelryCollection": "Exclusive Diamond Jewelry Collection",
     "forCouplesAndLuxuryLovers": "For Couples and Luxury Enthusiasts",
+    "discoverMore": "Discover More",
     "jewelrycollection": "Jewelry Collection",
     "viewAll": "View All",
     "discoverLuxuryJewelry": "Discover Luxury Jewelry",
@@ -384,9 +383,22 @@
                 "prices": 2210,
                 "img": "./img/chain/chain14k1.jpeg",
                 "images": ["./img/chain/chain14k2.jpeg", "./img/chain/chain14k3.jpeg", "./img/chain/chain14k5.jpeg"]
+            },
+
+            {
+                "id": 24,
+                "category": "set",
+
+                "name": "14k Gold Multi Golds Necklace & Bracelet Heart Set",
+                "description": "Embrace the beauty of love with our 14k Multi-Stone Gold Necklace and Bracelet Heart Set. This set features multiple hearts meticulously crafted in white, yellow, and rose gold, adorned with a dazzling array of Cubic Zirconia diamonds. This set is a symbol of the diverse facets of love and connection, offering a versatile and stunning addition to your jewelry collection.",
+                "prices": 2000,
+                "img": "./img/set/IMG_4615.jpeg",
+                "images": ["./img/rings/heartRing1.jpeg", "./img/rings/heartRing2.jpeg", "./img/rings/heartRing4.jpeg"]
             }
         ]
     },
+
+
 
 
 
@@ -419,5 +431,19 @@
             "name": "Patricia Gomez",
             "testimonial": "I can't say enough good things about BeltranJewrl. Every time I wear one of their pieces, I feel like I'm carrying a piece of art and elegance with me. They are simply magnificent!"
         }
-    ]
+    ],
+
+    "similarProductsTitle": "Similar Products",
+    "buy": "Buy",
+    "Bracelet Banner": "Bracelets Banner",
+    "Sort by": "Sort by",
+    "Feature": "Feature",
+    "Price": "Price",
+    "Name": "Name",
+    "Products": "Products",
+    "Bracelet Image": "Bracelet Image"
+
+
+
+
 }
