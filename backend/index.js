@@ -1,6 +1,8 @@
 const express = require('express');
 const Stripe = require('stripe');
 const cors = require('cors');
+const {FRONEND_URL} = require('./config');
+
 
 // Variables de entorno configuracion
 require('dotenv').config();
@@ -14,7 +16,9 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 // Configuración de correo electrónico
 
 
-app.use(cors());
+app.use(cors({
+    origin: FRONEND_URL
+}));
 app.use(express.json());
 
 
