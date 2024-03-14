@@ -1,7 +1,7 @@
 const express = require('express');
 const Stripe = require('stripe');
 const cors = require('cors');
-const {FRONEND_URL} = require('./config');
+// const {FRONEND_URL} = require('./config');
 
 
 // Variables de entorno configuracion
@@ -17,7 +17,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 
 app.use(cors({
-    origin: FRONEND_URL
+    origin: "http://localhost:5173"
 }));
 app.use(express.json());
 
