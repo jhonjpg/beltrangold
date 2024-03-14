@@ -1,0 +1,39 @@
+{
+    "name": "beltrangold",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@stripe/react-stripe-js": "^2.3.1",
+        "@stripe/stripe-js": "^2.1.7",
+        "axios": "^1.5.1",
+        "emailjs-com": "^3.2.0",
+        "i18next": "^23.4.7",
+        "nodemailer": "^6.9.7",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-i18next": "^13.2.2",
+        "react-intersection-observer": "^9.5.2",
+        "react-map-gl": "^7.1.7",
+        "react-paypal-button": "^4.1.1",
+        "react-paypal-button-v2": "^2.6.3",
+        "react-router-dom": "^6.21.1",
+        "react-routes": "^0.2.6",
+        "swiper": "^10.2.0",
+        "vite": "^4.4.11"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.24",
+        "@types/react-dom": "^18.0.8",
+        "@vitejs/plugin-react": "^2.2.0",
+        "autoprefixer": "^10.4.15",
+        "gh-pages": "^6.0.0",
+        "postcss": "^8.4.29",
+        "tailwindcss": "^3.3.3"
+    }
+}

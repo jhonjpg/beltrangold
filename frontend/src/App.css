@@ -1,0 +1,100 @@
+.btn2 {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.btn2::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - -2px);
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+}
+
+.btn2::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 55px);
+    background-color: #fbcc14;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+}
+
+.btn2:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+}
+
+.btn2:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+}
+
+.btn2:hover {
+    border: 2px solid #fbcc14;
+    background-color: #fbcc14;
+    color: black;
+    transition: 1s;
+}
+
+.btn2 span {
+    position: relative;
+    z-index: 3;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+/* No hay cambios en el CSS proporcionado */
+
+.webkittext {
+    background-color: rgba(255, 255, 255, 0.335);
+    transition: 1s;
+}
+
+.jewelryHover {
+    background-color: rgba(0, 0, 0, 0.301);
+    transition: 1s;
+}
+
+.jewelryHover:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition: 1s;
+}
+
+.jewelryHover>.webkittext {
+    background-size: cover;
+    background-position-y: center;
+    background-clip: text;
+    color: white;
+    -webkit-background-clip: text;
+    background-color: rgba(255, 255, 255, 0.335);
+}
+
+@media screen and (max-width: 768px) {
+    .desktopNav {
+        display: none !important;
+    }
+    .phoneNav {
+        display: flex !important;
+    }
+}
